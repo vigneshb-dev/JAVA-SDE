@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ==============================================================================
+  BackendLearningLab - Root Project Object Model (pom.xml)
+  ==============================================================================
+  PHASE 1 + PHASE 2 INTEGRATION:
+    Phase 1: Core Java + Concurrency + Maven + Pure JDBC + PostgreSQL
+    Phase 2: Spring Boot 3.3.x + Spring MVC + JPA + Hibernate 6.x
+  
+  WHAT SPRING BOOT STARTER PARENT DOES:
+  1. Sets default compiler configuration (Java 21).
+  2. Manages versions of 100+ dependencies in dependencyManagement to eliminate version conflicts.
+  3. Configures sensible resource filtering and standard Maven plugins.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.3.4</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <groupId>com.backendlearninglab</groupId>
+    <artifactId>orderflow-backend</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>OrderFlow Backend Learning Lab</name>
+    <description>
+        Professional Java Backend Learning Platform:
+        OrderFlow E-Commerce Order Processing &amp; Inventory System.
+        Phase 1: Core Java, Concurrency, Maven, Pure JDBC, PostgreSQL.
+        Phase 2: Spring Boot, Spring MVC, Spring Data JPA, Hibernate.
+    </description>
+
+    <properties>
+        <java.version>21</java.version>
+        <maven.compiler.release>21</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
+    <dependencies>
+        <!--
+          ======================================================================
+          PHASE 2: SPRING BOOT STARTERS
+          ======================================================================
+        -->
+        <!-- 
+          1. Spring Boot Starter Web:
+          Pulls in Spring MVC, REST framework, Jackson (JSON serialization),
+          and embedded Apache Tomcat server.
+        -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- 
+          2. Spring Boot Starter Data JPA:
+          Pulls in Hibernate 6.x (JPA provider), Spring Data JPA (JpaRepository),
+          Spring ORM, HikariCP (connection pooling), and Spring JDBC.
+        -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <!-- 
+          3. Spring Boot Starter Validation:
+          Pulls in Jakarta Bean Validation (Hibernate Validator) for:
+          @NotNull, @NotBlank, @Size, @Min, @Max, @Email, and @Valid on DTOs.
+        -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+
+        <!--
+          ======================================================================
+          PHASE 3: SPRING SECURITY, JWT & REDIS CACHING
+          ======================================================================
+        -->
+        <!-- 
+          4. Spring Boot Starter Security:
+          Pulls in Spring Security Core, Web, and Config.
+          Enables DelegatingFilterProxy, SecurityFilterChain, PasswordEncoder (BCrypt).
+        -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <!-- 
+          5. JJWT (Java JSON Web Token) Library:
+          Clean, standards-compliant library for building and verifying RFC 7519 JWT tokens.
+        -->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-api</artifactId>
+            <version>0.12.5</version>
+        </dependency>
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-impl</artifactId>
+            <version>0.12.5</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-jackson</artifactId>
+            <version>0.12.5</version>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!-- 
+          6. Spring Boot Starter Data Redis:
+          Pulls in Lettuce client and RedisTemplate for distributed key-value storage.
+        -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+        <!-- 
+          7. Spring Boot Starter Cache:
+          Enables @EnableCaching, @Cacheable, @CachePut, and @CacheEvict abstraction.
+        -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-cache</artifactId>
+        </dependency>
+
+        <!--
+          ======================================================================
+          PHASE 4: APACHE KAFKA & EVENT-DRIVEN MESSAGING
+          ======================================================================
+        -->
+        <!-- 
+          8. Spring Kafka:
+          Pulls in KafkaTemplate, @KafkaListener, DefaultErrorHandler,
+          DeadLetterPublishingRecoverer, and consumer group coordination.
+        -->
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+        </dependency>
+
+        <!--
+          ======================================================================
+          DATABASE DRIVERS & INFRASTRUCTURE
+          ======================================================================
+        -->
+        <!-- PostgreSQL JDBC Driver -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!-- H2 In-Memory Database (for seamless local demos and tests) -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!--
+          ======================================================================
+          TESTING SUITE
+          ======================================================================
+        -->
+        <!-- Spring Boot Starter Test: JUnit 5, AssertJ, Mockito, Spring Test Context, MockMvc -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Spring Security Test: WithMockUser, SecurityMockMvcRequestPostProcessors -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Spring Kafka Test: Embedded Kafka Broker for hermetic unit & integration testing -->
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Maven Compiler Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <release>${maven.compiler.release}</release>
+                    <compilerArgs>
+                        <arg>-parameters</arg>
+                    </compilerArgs>
+                </configuration>
+            </plugin>
+
+            <!-- Spring Boot Maven Plugin: Repackages executable JAR with nested dependencies -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.backendlearninglab.OrderFlowSpringBootApplication</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

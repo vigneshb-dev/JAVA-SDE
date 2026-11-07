@@ -1,0 +1,3 @@
+com\backendlearninglab\spring\JpaTransactionRollbackTest.class
+com\backendlearninglab\OrderServiceTransactionTest.class
+com\backendlearninglab\spring\OrderControllerIntegrationTest.class

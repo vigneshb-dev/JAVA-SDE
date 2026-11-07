@@ -1,0 +1,1167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.backendlearninglab.spring.AuthenticationAndSecurityTest" time="21.957" tests="6" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="G:\JAVA SDE\target\test-classes;G:\JAVA SDE\target\classes;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.3.4\spring-boot-starter-web-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter\3.3.4\spring-boot-starter-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot\3.3.4\spring-boot-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.4\spring-boot-autoconfigure-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.3.4\spring-boot-starter-logging-3.3.4.jar;C:\Users\God\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar;C:\Users\God\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\God\.m2\repository\org\slf4j\jul-to-slf4j\2.0.16\jul-to-slf4j-2.0.16.jar;C:\Users\God\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\God\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.3.4\spring-boot-starter-json-3.3.4.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.2\jackson-datatype-jdk8-2.17.2.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.2\jackson-datatype-jsr310-2.17.2.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.2\jackson-module-parameter-names-2.17.2.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.3.4\spring-boot-starter-tomcat-3.3.4.jar;C:\Users\God\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.30\tomcat-embed-core-10.1.30.jar;C:\Users\God\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.30\tomcat-embed-websocket-10.1.30.jar;C:\Users\God\.m2\repository\org\springframework\spring-web\6.1.13\spring-web-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-beans\6.1.13\spring-beans-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-webmvc\6.1.13\spring-webmvc-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-expression\6.1.13\spring-expression-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.3.4\spring-boot-starter-data-jpa-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.3.4\spring-boot-starter-aop-3.3.4.jar;C:\Users\God\.m2\repository\org\aspectj\aspectjweaver\1.9.22.1\aspectjweaver-1.9.22.1.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.3.4\spring-boot-starter-jdbc-3.3.4.jar;C:\Users\God\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\God\.m2\repository\org\springframework\spring-jdbc\6.1.13\spring-jdbc-6.1.13.jar;C:\Users\God\.m2\repository\org\hibernate\orm\hibernate-core\6.5.3.Final\hibernate-core-6.5.3.Final.jar;C:\Users\God\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\God\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\God\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\God\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\God\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\God\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\God\.m2\repository\net\bytebuddy\byte-buddy\1.14.19\byte-buddy-1.14.19.jar;C:\Users\God\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\God\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\God\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\God\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\God\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\God\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\God\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\God\.m2\repository\org\springframework\data\spring-data-jpa\3.3.4\spring-data-jpa-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\data\spring-data-commons\3.3.4\spring-data-commons-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\spring-orm\6.1.13\spring-orm-6.1.13.jar;C:\Users\God\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\God\.m2\repository\org\springframework\spring-aspects\6.1.13\spring-aspects-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.3.4\spring-boot-starter-validation-3.3.4.jar;C:\Users\God\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.30\tomcat-embed-el-10.1.30.jar;C:\Users\God\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;C:\Users\God\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.3.4\spring-boot-starter-security-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\spring-aop\6.1.13\spring-aop-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\security\spring-security-config\6.3.3\spring-security-config-6.3.3.jar;C:\Users\God\.m2\repository\org\springframework\security\spring-security-web\6.3.3\spring-security-web-6.3.3.jar;C:\Users\God\.m2\repository\io\jsonwebtoken\jjwt-api\0.12.5\jjwt-api-0.12.5.jar;C:\Users\God\.m2\repository\io\jsonwebtoken\jjwt-impl\0.12.5\jjwt-impl-0.12.5.jar;C:\Users\God\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.12.5\jjwt-jackson-0.12.5.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-data-redis\3.3.4\spring-boot-starter-data-redis-3.3.4.jar;C:\Users\God\.m2\repository\io\lettuce\lettuce-core\6.3.2.RELEASE\lettuce-core-6.3.2.RELEASE.jar;C:\Users\God\.m2\repository\io\netty\netty-common\4.1.113.Final\netty-common-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-handler\4.1.113.Final\netty-handler-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-resolver\4.1.113.Final\netty-resolver-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-buffer\4.1.113.Final\netty-buffer-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.113.Final\netty-transport-native-unix-common-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-codec\4.1.113.Final\netty-codec-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-transport\4.1.113.Final\netty-transport-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\projectreactor\reactor-core\3.6.10\reactor-core-3.6.10.jar;C:\Users\God\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\God\.m2\repository\org\springframework\data\spring-data-redis\3.3.4\spring-data-redis-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\data\spring-data-keyvalue\3.3.4\spring-data-keyvalue-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\spring-oxm\6.1.13\spring-oxm-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-cache\3.3.4\spring-boot-starter-cache-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\spring-context-support\6.1.13\spring-context-support-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\kafka\spring-kafka\3.2.4\spring-kafka-3.2.4.jar;C:\Users\God\.m2\repository\org\springframework\spring-context\6.1.13\spring-context-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-messaging\6.1.13\spring-messaging-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-tx\6.1.13\spring-tx-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\retry\spring-retry\2.0.9\spring-retry-2.0.9.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-clients\3.7.1\kafka-clients-3.7.1.jar;C:\Users\God\.m2\repository\com\github\luben\zstd-jni\1.5.6-3\zstd-jni-1.5.6-3.jar;C:\Users\God\.m2\repository\org\lz4\lz4-java\1.8.0\lz4-java-1.8.0.jar;C:\Users\God\.m2\repository\org\xerial\snappy\snappy-java\1.1.10.5\snappy-java-1.1.10.5.jar;C:\Users\God\.m2\repository\io\micrometer\micrometer-observation\1.13.4\micrometer-observation-1.13.4.jar;C:\Users\God\.m2\repository\io\micrometer\micrometer-commons\1.13.4\micrometer-commons-1.13.4.jar;C:\Users\God\.m2\repository\org\postgresql\postgresql\42.7.4\postgresql-42.7.4.jar;C:\Users\God\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\God\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.3.4\spring-boot-starter-test-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-test\3.3.4\spring-boot-test-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.3.4\spring-boot-test-autoconfigure-3.3.4.jar;C:\Users\God\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\God\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\God\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\God\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\God\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\God\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\God\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;C:\Users\God\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\God\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\God\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;C:\Users\God\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\God\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\God\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\God\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.19\byte-buddy-agent-1.14.19.jar;C:\Users\God\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\God\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;C:\Users\God\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\God\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\God\.m2\repository\org\springframework\spring-core\6.1.13\spring-core-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-jcl\6.1.13\spring-jcl-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-test\6.1.13\spring-test-6.1.13.jar;C:\Users\God\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\God\.m2\repository\org\springframework\security\spring-security-test\6.3.3\spring-security-test-6.3.3.jar;C:\Users\God\.m2\repository\org\springframework\security\spring-security-core\6.3.3\spring-security-core-6.3.3.jar;C:\Users\God\.m2\repository\org\springframework\security\spring-security-crypto\6.3.3\spring-security-crypto-6.3.3.jar;C:\Users\God\.m2\repository\org\springframework\kafka\spring-kafka-test\3.2.4\spring-kafka-test-3.2.4.jar;C:\Users\God\.m2\repository\org\apache\zookeeper\zookeeper\3.8.4\zookeeper-3.8.4.jar;C:\Users\God\.m2\repository\org\apache\zookeeper\zookeeper-jute\3.8.4\zookeeper-jute-3.8.4.jar;C:\Users\God\.m2\repository\org\apache\yetus\audience-annotations\0.12.0\audience-annotations-0.12.0.jar;C:\Users\God\.m2\repository\io\netty\netty-transport-native-epoll\4.1.113.Final\netty-transport-native-epoll-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.113.Final\netty-transport-classes-epoll-4.1.113.Final.jar;C:\Users\God\.m2\repository\ch\qos\logback\logback-core\1.5.8\logback-core-1.5.8.jar;C:\Users\God\.m2\repository\ch\qos\logback\logback-classic\1.5.8\logback-classic-1.5.8.jar;C:\Users\God\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-clients\3.7.1\kafka-clients-3.7.1-test.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-metadata\3.7.1\kafka-metadata-3.7.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-raft\3.7.1\kafka-raft-3.7.1.jar;C:\Users\God\.m2\repository\com\yammer\metrics\metrics-core\2.2.0\metrics-core-2.2.0.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-server-common\3.7.1\kafka-server-common-3.7.1.jar;C:\Users\God\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\God\.m2\repository\org\pcollections\pcollections\4.0.1\pcollections-4.0.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-server-common\3.7.1\kafka-server-common-3.7.1-test.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-streams-test-utils\3.7.1\kafka-streams-test-utils-3.7.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-streams\3.7.1\kafka-streams-3.7.1.jar;C:\Users\God\.m2\repository\org\rocksdb\rocksdbjni\7.9.2\rocksdbjni-7.9.2.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka_2.13\3.7.1\kafka_2.13-3.7.1.jar;C:\Users\God\.m2\repository\org\scala-lang\scala-library\2.13.12\scala-library-2.13.12.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-group-coordinator\3.7.1\kafka-group-coordinator-3.7.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-storage-api\3.7.1\kafka-storage-api-3.7.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-tools-api\3.7.1\kafka-tools-api-3.7.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-storage\3.7.1\kafka-storage-3.7.1.jar;C:\Users\God\.m2\repository\com\github\ben-manes\caffeine\caffeine\3.1.8\caffeine-3.1.8.jar;C:\Users\God\.m2\repository\com\google\errorprone\error_prone_annotations\2.21.1\error_prone_annotations-2.21.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-server\3.7.1\kafka-server-3.7.1.jar;C:\Users\God\.m2\repository\net\sourceforge\argparse4j\argparse4j\0.7.0\argparse4j-0.7.0.jar;C:\Users\God\.m2\repository\commons-validator\commons-validator\1.7\commons-validator-1.7.jar;C:\Users\God\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\God\.m2\repository\commons-digester\commons-digester\2.1\commons-digester-2.1.jar;C:\Users\God\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\module\jackson-module-scala_2.13\2.17.2\jackson-module-scala_2.13-2.17.2.jar;C:\Users\God\.m2\repository\com\thoughtworks\paranamer\paranamer\2.8\paranamer-2.8.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-csv\2.17.2\jackson-dataformat-csv-2.17.2.jar;C:\Users\God\.m2\repository\org\bitbucket\b_c\jose4j\0.9.4\jose4j-0.9.4.jar;C:\Users\God\.m2\repository\org\scala-lang\modules\scala-collection-compat_2.13\2.10.0\scala-collection-compat_2.13-2.10.0.jar;C:\Users\God\.m2\repository\org\scala-lang\modules\scala-java8-compat_2.13\1.0.2\scala-java8-compat_2.13-1.0.2.jar;C:\Users\God\.m2\repository\org\scala-lang\scala-reflect\2.13.12\scala-reflect-2.13.12.jar;C:\Users\God\.m2\repository\com\typesafe\scala-logging\scala-logging_2.13\3.9.4\scala-logging_2.13-3.9.4.jar;C:\Users\God\.m2\repository\io\dropwizard\metrics\metrics-core\4.1.12.1\metrics-core-4.1.12.1.jar;C:\Users\God\.m2\repository\commons-cli\commons-cli\1.4\commons-cli-1.4.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka_2.13\3.7.1\kafka_2.13-3.7.1-test.jar;C:\Users\God\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\God\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\God\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\God\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\God\.m2\repository\org\junit\platform\junit-platform-launcher\1.10.3\junit-platform-launcher-1.10.3.jar;C:\Users\God\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-25.0.5.0.3\bin"/>
+    <property name="sun.java.command" value="C:\Users\God\AppData\Local\Temp\surefire6041986229220644478\surefirebooter-20261108035645693_3.jar C:\Users\God\AppData\Local\Temp\surefire6041986229220644478 2026-11-08T03-56-45_529-jvmRun1 surefire-20261108035645693_1tmp surefire_0-20261108035645693_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="G:\JAVA SDE\target\test-classes;G:\JAVA SDE\target\classes;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.3.4\spring-boot-starter-web-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter\3.3.4\spring-boot-starter-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot\3.3.4\spring-boot-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.4\spring-boot-autoconfigure-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.3.4\spring-boot-starter-logging-3.3.4.jar;C:\Users\God\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar;C:\Users\God\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\God\.m2\repository\org\slf4j\jul-to-slf4j\2.0.16\jul-to-slf4j-2.0.16.jar;C:\Users\God\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\God\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.3.4\spring-boot-starter-json-3.3.4.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.2\jackson-datatype-jdk8-2.17.2.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.2\jackson-datatype-jsr310-2.17.2.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.2\jackson-module-parameter-names-2.17.2.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.3.4\spring-boot-starter-tomcat-3.3.4.jar;C:\Users\God\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.30\tomcat-embed-core-10.1.30.jar;C:\Users\God\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.30\tomcat-embed-websocket-10.1.30.jar;C:\Users\God\.m2\repository\org\springframework\spring-web\6.1.13\spring-web-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-beans\6.1.13\spring-beans-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-webmvc\6.1.13\spring-webmvc-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-expression\6.1.13\spring-expression-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.3.4\spring-boot-starter-data-jpa-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.3.4\spring-boot-starter-aop-3.3.4.jar;C:\Users\God\.m2\repository\org\aspectj\aspectjweaver\1.9.22.1\aspectjweaver-1.9.22.1.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.3.4\spring-boot-starter-jdbc-3.3.4.jar;C:\Users\God\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\God\.m2\repository\org\springframework\spring-jdbc\6.1.13\spring-jdbc-6.1.13.jar;C:\Users\God\.m2\repository\org\hibernate\orm\hibernate-core\6.5.3.Final\hibernate-core-6.5.3.Final.jar;C:\Users\God\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\God\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\God\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\God\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\God\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\God\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\God\.m2\repository\net\bytebuddy\byte-buddy\1.14.19\byte-buddy-1.14.19.jar;C:\Users\God\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\God\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\God\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\God\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\God\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\God\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\God\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\God\.m2\repository\org\springframework\data\spring-data-jpa\3.3.4\spring-data-jpa-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\data\spring-data-commons\3.3.4\spring-data-commons-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\spring-orm\6.1.13\spring-orm-6.1.13.jar;C:\Users\God\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\God\.m2\repository\org\springframework\spring-aspects\6.1.13\spring-aspects-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.3.4\spring-boot-starter-validation-3.3.4.jar;C:\Users\God\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.30\tomcat-embed-el-10.1.30.jar;C:\Users\God\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;C:\Users\God\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.3.4\spring-boot-starter-security-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\spring-aop\6.1.13\spring-aop-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\security\spring-security-config\6.3.3\spring-security-config-6.3.3.jar;C:\Users\God\.m2\repository\org\springframework\security\spring-security-web\6.3.3\spring-security-web-6.3.3.jar;C:\Users\God\.m2\repository\io\jsonwebtoken\jjwt-api\0.12.5\jjwt-api-0.12.5.jar;C:\Users\God\.m2\repository\io\jsonwebtoken\jjwt-impl\0.12.5\jjwt-impl-0.12.5.jar;C:\Users\God\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.12.5\jjwt-jackson-0.12.5.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-data-redis\3.3.4\spring-boot-starter-data-redis-3.3.4.jar;C:\Users\God\.m2\repository\io\lettuce\lettuce-core\6.3.2.RELEASE\lettuce-core-6.3.2.RELEASE.jar;C:\Users\God\.m2\repository\io\netty\netty-common\4.1.113.Final\netty-common-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-handler\4.1.113.Final\netty-handler-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-resolver\4.1.113.Final\netty-resolver-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-buffer\4.1.113.Final\netty-buffer-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.113.Final\netty-transport-native-unix-common-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-codec\4.1.113.Final\netty-codec-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-transport\4.1.113.Final\netty-transport-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\projectreactor\reactor-core\3.6.10\reactor-core-3.6.10.jar;C:\Users\God\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\God\.m2\repository\org\springframework\data\spring-data-redis\3.3.4\spring-data-redis-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\data\spring-data-keyvalue\3.3.4\spring-data-keyvalue-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\spring-oxm\6.1.13\spring-oxm-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-cache\3.3.4\spring-boot-starter-cache-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\spring-context-support\6.1.13\spring-context-support-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\kafka\spring-kafka\3.2.4\spring-kafka-3.2.4.jar;C:\Users\God\.m2\repository\org\springframework\spring-context\6.1.13\spring-context-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-messaging\6.1.13\spring-messaging-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-tx\6.1.13\spring-tx-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\retry\spring-retry\2.0.9\spring-retry-2.0.9.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-clients\3.7.1\kafka-clients-3.7.1.jar;C:\Users\God\.m2\repository\com\github\luben\zstd-jni\1.5.6-3\zstd-jni-1.5.6-3.jar;C:\Users\God\.m2\repository\org\lz4\lz4-java\1.8.0\lz4-java-1.8.0.jar;C:\Users\God\.m2\repository\org\xerial\snappy\snappy-java\1.1.10.5\snappy-java-1.1.10.5.jar;C:\Users\God\.m2\repository\io\micrometer\micrometer-observation\1.13.4\micrometer-observation-1.13.4.jar;C:\Users\God\.m2\repository\io\micrometer\micrometer-commons\1.13.4\micrometer-commons-1.13.4.jar;C:\Users\God\.m2\repository\org\postgresql\postgresql\42.7.4\postgresql-42.7.4.jar;C:\Users\God\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\God\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.3.4\spring-boot-starter-test-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-test\3.3.4\spring-boot-test-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.3.4\spring-boot-test-autoconfigure-3.3.4.jar;C:\Users\God\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\God\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\God\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\God\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\God\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\God\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\God\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;C:\Users\God\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\God\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\God\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;C:\Users\God\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\God\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\God\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\God\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.19\byte-buddy-agent-1.14.19.jar;C:\Users\God\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\God\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;C:\Users\God\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\God\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\God\.m2\repository\org\springframework\spring-core\6.1.13\spring-core-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-jcl\6.1.13\spring-jcl-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-test\6.1.13\spring-test-6.1.13.jar;C:\Users\God\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\God\.m2\repository\org\springframework\security\spring-security-test\6.3.3\spring-security-test-6.3.3.jar;C:\Users\God\.m2\repository\org\springframework\security\spring-security-core\6.3.3\spring-security-core-6.3.3.jar;C:\Users\God\.m2\repository\org\springframework\security\spring-security-crypto\6.3.3\spring-security-crypto-6.3.3.jar;C:\Users\God\.m2\repository\org\springframework\kafka\spring-kafka-test\3.2.4\spring-kafka-test-3.2.4.jar;C:\Users\God\.m2\repository\org\apache\zookeeper\zookeeper\3.8.4\zookeeper-3.8.4.jar;C:\Users\God\.m2\repository\org\apache\zookeeper\zookeeper-jute\3.8.4\zookeeper-jute-3.8.4.jar;C:\Users\God\.m2\repository\org\apache\yetus\audience-annotations\0.12.0\audience-annotations-0.12.0.jar;C:\Users\God\.m2\repository\io\netty\netty-transport-native-epoll\4.1.113.Final\netty-transport-native-epoll-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.113.Final\netty-transport-classes-epoll-4.1.113.Final.jar;C:\Users\God\.m2\repository\ch\qos\logback\logback-core\1.5.8\logback-core-1.5.8.jar;C:\Users\God\.m2\repository\ch\qos\logback\logback-classic\1.5.8\logback-classic-1.5.8.jar;C:\Users\God\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-clients\3.7.1\kafka-clients-3.7.1-test.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-metadata\3.7.1\kafka-metadata-3.7.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-raft\3.7.1\kafka-raft-3.7.1.jar;C:\Users\God\.m2\repository\com\yammer\metrics\metrics-core\2.2.0\metrics-core-2.2.0.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-server-common\3.7.1\kafka-server-common-3.7.1.jar;C:\Users\God\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\God\.m2\repository\org\pcollections\pcollections\4.0.1\pcollections-4.0.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-server-common\3.7.1\kafka-server-common-3.7.1-test.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-streams-test-utils\3.7.1\kafka-streams-test-utils-3.7.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-streams\3.7.1\kafka-streams-3.7.1.jar;C:\Users\God\.m2\repository\org\rocksdb\rocksdbjni\7.9.2\rocksdbjni-7.9.2.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka_2.13\3.7.1\kafka_2.13-3.7.1.jar;C:\Users\God\.m2\repository\org\scala-lang\scala-library\2.13.12\scala-library-2.13.12.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-group-coordinator\3.7.1\kafka-group-coordinator-3.7.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-storage-api\3.7.1\kafka-storage-api-3.7.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-tools-api\3.7.1\kafka-tools-api-3.7.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-storage\3.7.1\kafka-storage-3.7.1.jar;C:\Users\God\.m2\repository\com\github\ben-manes\caffeine\caffeine\3.1.8\caffeine-3.1.8.jar;C:\Users\God\.m2\repository\com\google\errorprone\error_prone_annotations\2.21.1\error_prone_annotations-2.21.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-server\3.7.1\kafka-server-3.7.1.jar;C:\Users\God\.m2\repository\net\sourceforge\argparse4j\argparse4j\0.7.0\argparse4j-0.7.0.jar;C:\Users\God\.m2\repository\commons-validator\commons-validator\1.7\commons-validator-1.7.jar;C:\Users\God\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\God\.m2\repository\commons-digester\commons-digester\2.1\commons-digester-2.1.jar;C:\Users\God\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\module\jackson-module-scala_2.13\2.17.2\jackson-module-scala_2.13-2.17.2.jar;C:\Users\God\.m2\repository\com\thoughtworks\paranamer\paranamer\2.8\paranamer-2.8.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-csv\2.17.2\jackson-dataformat-csv-2.17.2.jar;C:\Users\God\.m2\repository\org\bitbucket\b_c\jose4j\0.9.4\jose4j-0.9.4.jar;C:\Users\God\.m2\repository\org\scala-lang\modules\scala-collection-compat_2.13\2.10.0\scala-collection-compat_2.13-2.10.0.jar;C:\Users\God\.m2\repository\org\scala-lang\modules\scala-java8-compat_2.13\1.0.2\scala-java8-compat_2.13-1.0.2.jar;C:\Users\God\.m2\repository\org\scala-lang\scala-reflect\2.13.12\scala-reflect-2.13.12.jar;C:\Users\God\.m2\repository\com\typesafe\scala-logging\scala-logging_2.13\3.9.4\scala-logging_2.13-3.9.4.jar;C:\Users\God\.m2\repository\io\dropwizard\metrics\metrics-core\4.1.12.1\metrics-core-4.1.12.1.jar;C:\Users\God\.m2\repository\commons-cli\commons-cli\1.4\commons-cli-1.4.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka_2.13\3.7.1\kafka_2.13-3.7.1-test.jar;C:\Users\God\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\God\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\God\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\God\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\God\.m2\repository\org\junit\platform\junit-platform-launcher\1.10.3\junit-platform-launcher-1.10.3.jar;C:\Users\God\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\God"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-10-25"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-25.0.5.0.3"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="G:\JAVA SDE"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\God\AppData\Local\Temp\surefire6041986229220644478\surefirebooter-20261108035645693_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.5.0.3+1-LTS-2"/>
+    <property name="user.name" value="God"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\God\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\God\AppData\Local\Temp\"/>
+    <property name="java.version" value="25.0.5.0.3"/>
+    <property name="user.dir" value="G:\JAVA SDE"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="5512"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-25.0.5.0.3\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/God/.gemini/antigravity/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\dotnet\;C:\Program Files\apache-maven-3.9.16\bin;C:\Program Files\Git\cmd;C:\Users\God\AppData\Local\Programs\Python\Python315\Scripts\;C:\Users\God\AppData\Local\Programs\Python\Python315\;C:\Users\God\AppData\Local\Microsoft\WindowsApps;C:\Users\God\AppData\Local\Kingsoft\WPS Office\12.1.0.27458\clitool;C:\Users\God\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\God\AppData\Local\GitHubCopilotCLI\;C:\Users\God\AppData\Local\Programs\Microsoft VS Code\bin\copilot-shim;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.0.5.0.3+1-LTS-2"/>
+    <property name="stdin.encoding" value="Cp1252"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[orderflow-backend] "/>
+  </properties>
+  <testcase name="testLoginSuccess" classname="com.backendlearninglab.spring.AuthenticationAndSecurityTest" time="2.453">
+    <system-out><![CDATA[2026-11-08 03:56:48.579 [main] [SYSTEM] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.backendlearninglab.spring.AuthenticationAndSecurityTest]: AuthenticationAndSecurityTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-08 03:56:48.968 [main] [SYSTEM] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.backendlearninglab.OrderFlowSpringBootApplication for test class com.backendlearninglab.spring.AuthenticationAndSecurityTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.4)
+
+2026-11-08 03:56:49.897 [background-preinit] [SYSTEM] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-11-08 03:56:49.972 [main] [SYSTEM] INFO  c.b.s.AuthenticationAndSecurityTest - Starting AuthenticationAndSecurityTest using Java 25.0.5.0.3 with PID 5512 (started by God in G:\JAVA SDE)
+2026-11-08 03:56:49.972 [main] [SYSTEM] DEBUG c.b.s.AuthenticationAndSecurityTest - Running with Spring Boot v3.3.4, Spring v6.1.13
+2026-11-08 03:56:49.974 [main] [SYSTEM] INFO  c.b.s.AuthenticationAndSecurityTest - The following 1 profile is active: "dev"
+2026-11-08 03:56:52.720 [main] [SYSTEM] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-11-08 03:56:52.722 [main] [SYSTEM] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-08 03:56:52.991 [main] [SYSTEM] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 255 ms. Found 6 JPA repository interfaces.
+2026-11-08 03:56:53.014 [main] [SYSTEM] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-11-08 03:56:53.016 [main] [SYSTEM] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-11-08 03:56:53.045 [main] [SYSTEM] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backendlearninglab.spring.repository.SpringDataInventoryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-11-08 03:56:53.045 [main] [SYSTEM] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backendlearninglab.spring.repository.SpringDataOrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-11-08 03:56:53.046 [main] [SYSTEM] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backendlearninglab.spring.repository.SpringDataOutboxRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-11-08 03:56:53.046 [main] [SYSTEM] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backendlearninglab.spring.repository.SpringDataProcessedEventRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-11-08 03:56:53.046 [main] [SYSTEM] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backendlearninglab.spring.repository.SpringDataProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-11-08 03:56:53.046 [main] [SYSTEM] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backendlearninglab.spring.repository.SpringDataUserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-11-08 03:56:53.047 [main] [SYSTEM] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+2026-11-08 03:56:55.361 [main] [SYSTEM] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-11-08 03:56:55.486 [main] [SYSTEM] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-11-08 03:56:55.632 [main] [SYSTEM] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-11-08 03:56:56.838 [main] [SYSTEM] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-08 03:56:56.902 [main] [SYSTEM] INFO  com.zaxxer.hikari.HikariDataSource - OrderFlow-Spring-HikariPool - Starting...
+2026-11-08 03:56:56.914 [main] [SYSTEM] INFO  com.zaxxer.hikari.pool.HikariPool - OrderFlow-Spring-HikariPool - Added connection conn10: url=jdbc:h2:mem:orderflow_dev user=SA
+2026-11-08 03:56:56.914 [main] [SYSTEM] INFO  com.zaxxer.hikari.HikariDataSource - OrderFlow-Spring-HikariPool - Start completed.
+2026-11-08 03:56:59.267 [main] [SYSTEM] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-08 03:56:59.286 [main] [SYSTEM] DEBUG org.hibernate.SQL - 
+    drop table if exists inventory cascade 
+Hibernate: 
+    drop table if exists inventory cascade 
+2026-11-08 03:56:59.287 [main] [SYSTEM] DEBUG org.hibernate.SQL - 
+    drop table if exists order_items cascade 
+Hibernate: 
+    drop table if exists order_items cascade 
+2026-11-08 03:56:59.288 [main] [SYSTEM] DEBUG org.hibernate.SQL - 
+    drop table if exists orders cascade 
+Hibernate: 
+    drop table if exists orders cascade 
+2026-11-08 03:56:59.288 [main] [SYSTEM] DEBUG org.hibernate.SQL - 
+    drop table if exists outbox_events cascade 
+Hibernate: 
+    drop table if exists outbox_events cascade 
+2026-11-08 03:56:59.288 [main] [SYSTEM] DEBUG org.hibernate.SQL - 
+    drop table if exists processed_events cascade 
+Hibernate: 
+    drop table if exists processed_events cascade 
+2026-11-08 03:56:59.289 [main] [SYSTEM] DEBUG org.hibernate.SQL - 
+    drop table if exists products cascade 
+Hibernate: 
+    drop table if exists products cascade 
+2026-11-08 03:56:59.290 [main] [SYSTEM] DEBUG org.hibernate.SQL - 
+    drop table if exists users cascade 
+Hibernate: 
+    drop table if exists users cascade 
+2026-11-08 03:56:59.299 [main] [SYSTEM] DEBUG org.hibernate.SQL - 
+    create table inventory (
+        available_stock integer not null,
+        reserved_stock integer not null,
+        last_restocked_at timestamp(6) with time zone,
+        product_id bigint not null,
+        warehouse_location varchar(100),
+        primary key (product_id)
+    )
+Hibernate: 
+    create table inventory (
+        available_stock integer not null,
+        reserved_stock integer not null,
+        last_restocked_at timestamp(6) with time zone,
+        product_id bigint not null,
+        warehouse_location varchar(100),
+        primary key (product_id)
+    )
+2026-11-08 03:56:59.301 [main] [SYSTEM] DEBUG org.hibernate.SQL - 
+    create table order_items (
+        quantity integer not null,
+        subtotal numeric(12,2) not null,
+        unit_price numeric(12,2) not null,
+        id bigint generated by default as identity,
+        order_id bigint not null,
+        product_id bigint not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table order_items (
+        quantity integer not null,
+        subtotal numeric(12,2) not null,
+        unit_price numeric(12,2) not null,
+        id bigint generated by default as identity,
+        order_id bigint not null,
+        product_id bigint not null,
+        primary key (id)
+    )
+2026-11-08 03:56:59.303 [main] [SYSTEM] DEBUG org.hibernate.SQL - 
+    create table orders (
+        total_amount numeric(12,2) not null,
+        created_at timestamp(6) with time zone not null,
+        id bigint generated by default as identity,
+        updated_at timestamp(6) with time zone not null,
+        user_id bigint not null,
+        order_number varchar(64) not null unique,
+        shipping_address TEXT not null,
+        status enum ('CANCELLED','DELIVERED','PAID','PENDING','SHIPPED') not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table orders (
+        total_amount numeric(12,2) not null,
+        created_at timestamp(6) with time zone not null,
+        id bigint generated by default as identity,
+        updated_at timestamp(6) with time zone not null,
+        user_id bigint not null,
+        order_number varchar(64) not null unique,
+        shipping_address TEXT not null,
+        status enum ('CANCELLED','DELIVERED','PAID','PENDING','SHIPPED') not null,
+        primary key (id)
+    )
+2026-11-08 03:56:59.306 [main] [SYSTEM] DEBUG org.hibernate.SQL - 
+    create table outbox_events (
+        retry_count integer not null,
+        created_at timestamp(6) with time zone not null,
+        id bigint generated by default as identity,
+        processed_at timestamp(6) with time zone,
+        aggregate_id varchar(64) not null,
+        aggregate_type varchar(64) not null,
+        event_type varchar(64) not null,
+        payload TEXT not null,
+        status enum ('FAILED','PENDING','PUBLISHED') not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table outbox_events (
+        retry_count integer not null,
+        created_at timestamp(6) with time zone not null,
+        id bigint generated by default as identity,
+        processed_at timestamp(6) with time zone,
+        aggregate_id varchar(64) not null,
+        aggregate_type varchar(64) not null,
+        event_type varchar(64) not null,
+        payload TEXT not null,
+        status enum ('FAILED','PENDING','PUBLISHED') not null,
+        primary key (id)
+    )
+2026-11-08 03:56:59.308 [main] [SYSTEM] DEBUG org.hibernate.SQL - 
+    create table processed_events (
+        processed_at timestamp(6) with time zone not null,
+        event_id varchar(64) not null,
+        consumer_name varchar(100) not null,
+        primary key (event_id, consumer_name)
+    )
+Hibernate: 
+    create table processed_events (
+        processed_at timestamp(6) with time zone not null,
+        event_id varchar(64) not null,
+        consumer_name varchar(100) not null,
+        primary key (event_id, consumer_name)
+    )
+2026-11-08 03:56:59.310 [main] [SYSTEM] DEBUG org.hibernate.SQL - 
+    create table products (
+        is_active boolean not null,
+        price numeric(12,2) not null,
+        created_at timestamp(6) with time zone not null,
+        id bigint generated by default as identity,
+        updated_at timestamp(6) with time zone not null,
+        sku varchar(64) not null unique,
+        category varchar(100) not null,
+        description TEXT,
+        name varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table products (
+        is_active boolean not null,
+        price numeric(12,2) not null,
+        created_at timestamp(6) with time zone not null,
+        id bigint generated by default as identity,
+        updated_at timestamp(6) with time zone not null,
+        sku varchar(64) not null unique,
+        category varchar(100) not null,
+        description TEXT,
+        name varchar(255) not null,
+        primary key (id)
+    )
+2026-11-08 03:56:59.314 [main] [SYSTEM] DEBUG org.hibernate.SQL - 
+    create table users (
+        created_at timestamp(6) with time zone not null,
+        id bigint generated by default as identity,
+        updated_at timestamp(6) with time zone not null,
+        status varchar(20) not null,
+        full_name varchar(150) not null,
+        email varchar(255) not null unique,
+        password_hash varchar(255) not null,
+        role enum ('ADMIN','CUSTOMER','INVENTORY_MANAGER','MANAGER','USER') not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table users (
+        created_at timestamp(6) with time zone not null,
+        id bigint generated by default as identity,
+        updated_at timestamp(6) with time zone not null,
+        status varchar(20) not null,
+        full_name varchar(150) not null,
+        email varchar(255) not null unique,
+        password_hash varchar(255) not null,
+        role enum ('ADMIN','CUSTOMER','INVENTORY_MANAGER','MANAGER','USER') not null,
+        primary key (id)
+    )
+2026-11-08 03:56:59.317 [main] [SYSTEM] DEBUG org.hibernate.SQL - 
+    alter table if exists order_items 
+       add constraint FKbioxgbv59vetrxe0ejfubep1w 
+       foreign key (order_id) 
+       references orders
+Hibernate: 
+    alter table if exists order_items 
+       add constraint FKbioxgbv59vetrxe0ejfubep1w 
+       foreign key (order_id) 
+       references orders
+2026-11-08 03:56:59.321 [main] [SYSTEM] DEBUG org.hibernate.SQL - 
+    alter table if exists order_items 
+       add constraint FKocimc7dtr037rh4ls4l95nlfi 
+       foreign key (product_id) 
+       references products
+Hibernate: 
+    alter table if exists order_items 
+       add constraint FKocimc7dtr037rh4ls4l95nlfi 
+       foreign key (product_id) 
+       references products
+2026-11-08 03:56:59.324 [main] [SYSTEM] DEBUG org.hibernate.SQL - 
+    alter table if exists orders 
+       add constraint FK32ql8ubntj5uh44ph9659tiih 
+       foreign key (user_id) 
+       references users
+Hibernate: 
+    alter table if exists orders 
+       add constraint FK32ql8ubntj5uh44ph9659tiih 
+       foreign key (user_id) 
+       references users
+2026-11-08 03:56:59.334 [main] [SYSTEM] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-08 03:57:00.321 [main] [SYSTEM] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-11-08 03:57:00.322 [main] [SYSTEM] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2026-11-08 03:57:00.431 [main] [SYSTEM] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-11-08 03:57:02.596 [main] [SYSTEM] INFO  c.b.spring.config.ApplicationConfig - [ApplicationConfig] Registering system UTC Clock bean in ApplicationContext.
+2026-11-08 03:57:04.786 [main] [SYSTEM] DEBUG c.b.s.o.CorrelationIdFilter - Filter 'correlationIdFilter' configured for use
+2026-11-08 03:57:04.786 [main] [SYSTEM] DEBUG c.b.s.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-11-08 03:57:04.788 [main] [SYSTEM] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-11-08 03:57:04.788 [main] [SYSTEM] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-11-08 03:57:04.791 [main] [SYSTEM] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+2026-11-08 03:57:05.096 [main] [SYSTEM] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-orderflow-inventory-service-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = orderflow-inventory-service
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+
+2026-11-08 03:57:05.204 [main] [SYSTEM] INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2026-11-08 03:57:05.471 [main] [SYSTEM] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.7.1
+2026-11-08 03:57:05.471 [main] [SYSTEM] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: e2494e6ffb89f828
+2026-11-08 03:57:05.471 [main] [SYSTEM] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1794090425470
+2026-11-08 03:57:05.477 [main] [SYSTEM] INFO  o.a.k.c.c.i.LegacyKafkaConsumer - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Subscribed to topic(s): order-created-events
+2026-11-08 03:57:05.483 [main] [SYSTEM] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-orderflow-notification-service-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = orderflow-notification-service
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+
+2026-11-08 03:57:05.484 [main] [SYSTEM] INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2026-11-08 03:57:05.504 [main] [SYSTEM] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.7.1
+2026-11-08 03:57:05.504 [main] [SYSTEM] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: e2494e6ffb89f828
+2026-11-08 03:57:05.504 [main] [SYSTEM] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1794090425504
+2026-11-08 03:57:05.505 [main] [SYSTEM] INFO  o.a.k.c.c.i.LegacyKafkaConsumer - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Subscribed to topic(s): order-created-events
+2026-11-08 03:57:05.527 [main] [SYSTEM] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-orderflow-dlt-monitor-service-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = orderflow-dlt-monitor-service
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+
+2026-11-08 03:57:05.528 [main] [SYSTEM] INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2026-11-08 03:57:05.555 [main] [SYSTEM] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.7.1
+2026-11-08 03:57:05.555 [main] [SYSTEM] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: e2494e6ffb89f828
+2026-11-08 03:57:05.555 [main] [SYSTEM] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1794090425555
+2026-11-08 03:57:05.560 [main] [SYSTEM] INFO  o.a.k.c.c.i.LegacyKafkaConsumer - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Subscribed to topic(s): order-created-events-dlt
+2026-11-08 03:57:05.599 [main] [SYSTEM] INFO  c.b.s.AuthenticationAndSecurityTest - Started AuthenticationAndSecurityTest in 16.343 seconds (process running for 19.714)
+2026-11-08 03:57:05.694 [main] [SYSTEM] INFO  c.b.OrderFlowSpringBootApplication - ==================================================================
+2026-11-08 03:57:05.694 [main] [SYSTEM] INFO  c.b.OrderFlowSpringBootApplication -    OrderFlow Spring Boot 3.3 System Active                        
+2026-11-08 03:57:05.694 [main] [SYSTEM] INFO  c.b.OrderFlowSpringBootApplication -    Store Name:            OrderFlow Dev Store
+2026-11-08 03:57:05.694 [main] [SYSTEM] INFO  c.b.OrderFlowSpringBootApplication -    Default Currency:      USD
+2026-11-08 03:57:05.694 [main] [SYSTEM] INFO  c.b.OrderFlowSpringBootApplication -    Low Stock Threshold:   5
+2026-11-08 03:57:05.694 [main] [SYSTEM] INFO  c.b.OrderFlowSpringBootApplication - ==================================================================
+2026-11-08 03:57:05.967 [scheduling-1] [SYSTEM] DEBUG org.hibernate.SQL - 
+    select
+        oee1_0.id,
+        oee1_0.aggregate_id,
+        oee1_0.aggregate_type,
+        oee1_0.created_at,
+        oee1_0.event_type,
+        oee1_0.payload,
+        oee1_0.processed_at,
+        oee1_0.retry_count,
+        oee1_0.status 
+    from
+        outbox_events oee1_0 
+    where
+        oee1_0.status=? 
+    order by
+        oee1_0.created_at 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        oee1_0.id,
+        oee1_0.aggregate_id,
+        oee1_0.aggregate_type,
+        oee1_0.created_at,
+        oee1_0.event_type,
+        oee1_0.payload,
+        oee1_0.processed_at,
+        oee1_0.retry_count,
+        oee1_0.status 
+    from
+        outbox_events oee1_0 
+    where
+        oee1_0.status=? 
+    order by
+        oee1_0.created_at 
+    fetch
+        first ? rows only
+2026-11-08 03:57:05.969 [scheduling-1] [SYSTEM] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:ENUM) <- [PENDING]
+2026-11-08 03:57:05.970 [scheduling-1] [SYSTEM] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:INTEGER) <- [50]
+2026-11-08 03:57:06.287 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Node -1 disconnected.
+2026-11-08 03:57:06.287 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Node -1 disconnected.
+2026-11-08 03:57:06.290 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:06.290 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:06.293 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:06.294 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:06.298 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Node -1 disconnected.
+2026-11-08 03:57:06.298 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:06.298 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:06.397 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Node -1 disconnected.
+2026-11-08 03:57:06.398 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:06.399 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:06.400 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Node -1 disconnected.
+2026-11-08 03:57:06.401 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:06.401 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:06.416 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Node -1 disconnected.
+2026-11-08 03:57:06.416 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:06.416 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:06.501 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Node -1 disconnected.
+2026-11-08 03:57:06.502 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:06.502 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:06.517 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Node -1 disconnected.
+2026-11-08 03:57:06.518 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:06.518 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:06.553 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Node -1 disconnected.
+2026-11-08 03:57:06.553 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:06.553 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:06.702 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Node -1 disconnected.
+2026-11-08 03:57:06.703 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:06.703 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:06.744 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Node -1 disconnected.
+2026-11-08 03:57:06.745 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:06.745 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:06.748 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Node -1 disconnected.
+2026-11-08 03:57:06.748 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:06.749 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:07.117 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Node -1 disconnected.
+2026-11-08 03:57:07.118 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:07.118 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:07.127 [main] [67252c40-5b39-450c-90c5-7832e41d7538] INFO  c.b.spring.controller.AuthController - Received public registration request for: login.success@example.com
+2026-11-08 03:57:07.132 [main] [67252c40-5b39-450c-90c5-7832e41d7538] DEBUG org.hibernate.SQL - 
+    select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-11-08 03:57:07.133 [main] [67252c40-5b39-450c-90c5-7832e41d7538] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [login.success@example.com]
+2026-11-08 03:57:07.133 [main] [67252c40-5b39-450c-90c5-7832e41d7538] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:INTEGER) <- [1]
+2026-11-08 03:57:07.168 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Node -1 disconnected.
+2026-11-08 03:57:07.169 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:07.169 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:07.248 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Node -1 disconnected.
+2026-11-08 03:57:07.249 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:07.249 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:07.502 [main] [67252c40-5b39-450c-90c5-7832e41d7538] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        users
+        (created_at, email, full_name, password_hash, role, status, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, email, full_name, password_hash, role, status, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+2026-11-08 03:57:07.504 [main] [67252c40-5b39-450c-90c5-7832e41d7538] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:TIMESTAMP_UTC) <- [2026-11-07T22:27:07.486781400Z]
+2026-11-08 03:57:07.513 [main] [67252c40-5b39-450c-90c5-7832e41d7538] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:VARCHAR) <- [login.success@example.com]
+2026-11-08 03:57:07.514 [main] [67252c40-5b39-450c-90c5-7832e41d7538] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:VARCHAR) <- [Login User]
+2026-11-08 03:57:07.514 [main] [67252c40-5b39-450c-90c5-7832e41d7538] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:VARCHAR) <- [$2a$12$vt6fWuuvvHTAyXx/lN1LX.24uU5LvnwxMyR269BZCNLBeklzYJkfm]
+2026-11-08 03:57:07.514 [main] [67252c40-5b39-450c-90c5-7832e41d7538] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:ENUM) <- [USER]
+2026-11-08 03:57:07.514 [main] [67252c40-5b39-450c-90c5-7832e41d7538] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:VARCHAR) <- [ACTIVE]
+2026-11-08 03:57:07.514 [main] [67252c40-5b39-450c-90c5-7832e41d7538] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:TIMESTAMP_UTC) <- [2026-11-07T22:27:07.486781400Z]
+2026-11-08 03:57:07.563 [main] [947da9f3-8414-4113-8b80-6a21f70a616d] INFO  c.b.spring.controller.AuthController - Processing login for: login.success@example.com
+2026-11-08 03:57:07.854 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Node -1 disconnected.
+2026-11-08 03:57:07.854 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:07.855 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:07.867 [main] [947da9f3-8414-4113-8b80-6a21f70a616d] DEBUG org.hibernate.SQL - 
+    select
+        ue1_0.id,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.full_name,
+        ue1_0.password_hash,
+        ue1_0.role,
+        ue1_0.status,
+        ue1_0.updated_at 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=?
+Hibernate: 
+    select
+        ue1_0.id,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.full_name,
+        ue1_0.password_hash,
+        ue1_0.role,
+        ue1_0.status,
+        ue1_0.updated_at 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=?
+2026-11-08 03:57:07.868 [main] [947da9f3-8414-4113-8b80-6a21f70a616d] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [login.success@example.com]
+2026-11-08 03:57:08.001 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Node -1 disconnected.
+2026-11-08 03:57:08.001 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:08.002 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:08.095 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Node -1 disconnected.
+2026-11-08 03:57:08.096 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:08.096 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:08.198 [main] [947da9f3-8414-4113-8b80-6a21f70a616d] INFO  c.b.spring.controller.AuthController - Issued JWT for principal: login.success@example.com (Role: USER)
+]]></system-out>
+    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\God\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.19\byte-buddy-agent-1.14.19.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+  <testcase name="testGetAuthenticatedUserProfile" classname="com.backendlearninglab.spring.AuthenticationAndSecurityTest" time="0.612">
+    <system-out><![CDATA[2026-11-08 03:57:08.243 [main] [0fe28127-59f4-4823-8d4a-d2a38368cf1c] INFO  c.b.spring.controller.AuthController - Received public registration request for: profile.check@example.com
+2026-11-08 03:57:08.245 [main] [0fe28127-59f4-4823-8d4a-d2a38368cf1c] DEBUG org.hibernate.SQL - 
+    select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-11-08 03:57:08.246 [main] [0fe28127-59f4-4823-8d4a-d2a38368cf1c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [profile.check@example.com]
+2026-11-08 03:57:08.246 [main] [0fe28127-59f4-4823-8d4a-d2a38368cf1c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:INTEGER) <- [1]
+2026-11-08 03:57:08.508 [main] [0fe28127-59f4-4823-8d4a-d2a38368cf1c] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        users
+        (created_at, email, full_name, password_hash, role, status, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, email, full_name, password_hash, role, status, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+2026-11-08 03:57:08.508 [main] [0fe28127-59f4-4823-8d4a-d2a38368cf1c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:TIMESTAMP_UTC) <- [2026-11-07T22:27:08.508498700Z]
+2026-11-08 03:57:08.509 [main] [0fe28127-59f4-4823-8d4a-d2a38368cf1c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:VARCHAR) <- [profile.check@example.com]
+2026-11-08 03:57:08.509 [main] [0fe28127-59f4-4823-8d4a-d2a38368cf1c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:VARCHAR) <- [Profile User]
+2026-11-08 03:57:08.509 [main] [0fe28127-59f4-4823-8d4a-d2a38368cf1c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:VARCHAR) <- [$2a$12$K82XjRVHK/8XByJbSsjJo.W6D/mlDQUzyzyMLd3csem8Sppd0U.RO]
+2026-11-08 03:57:08.509 [main] [0fe28127-59f4-4823-8d4a-d2a38368cf1c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:ENUM) <- [USER]
+2026-11-08 03:57:08.509 [main] [0fe28127-59f4-4823-8d4a-d2a38368cf1c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:VARCHAR) <- [ACTIVE]
+2026-11-08 03:57:08.509 [main] [0fe28127-59f4-4823-8d4a-d2a38368cf1c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:TIMESTAMP_UTC) <- [2026-11-07T22:27:08.508498700Z]
+2026-11-08 03:57:08.515 [main] [89d9fe4a-bb7b-4410-812d-dce6f04eeb8e] INFO  c.b.spring.controller.AuthController - Processing login for: profile.check@example.com
+2026-11-08 03:57:08.516 [main] [89d9fe4a-bb7b-4410-812d-dce6f04eeb8e] DEBUG org.hibernate.SQL - 
+    select
+        ue1_0.id,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.full_name,
+        ue1_0.password_hash,
+        ue1_0.role,
+        ue1_0.status,
+        ue1_0.updated_at 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=?
+Hibernate: 
+    select
+        ue1_0.id,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.full_name,
+        ue1_0.password_hash,
+        ue1_0.role,
+        ue1_0.status,
+        ue1_0.updated_at 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=?
+2026-11-08 03:57:08.517 [main] [89d9fe4a-bb7b-4410-812d-dce6f04eeb8e] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [profile.check@example.com]
+2026-11-08 03:57:08.790 [main] [89d9fe4a-bb7b-4410-812d-dce6f04eeb8e] INFO  c.b.spring.controller.AuthController - Issued JWT for principal: profile.check@example.com (Role: USER)
+2026-11-08 03:57:08.836 [main] [74ffc1ca-467d-4a72-85ea-5a68e8591da5] DEBUG org.hibernate.SQL - 
+    select
+        ue1_0.id,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.full_name,
+        ue1_0.password_hash,
+        ue1_0.role,
+        ue1_0.status,
+        ue1_0.updated_at 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=?
+Hibernate: 
+    select
+        ue1_0.id,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.full_name,
+        ue1_0.password_hash,
+        ue1_0.role,
+        ue1_0.status,
+        ue1_0.updated_at 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=?
+2026-11-08 03:57:08.837 [main] [74ffc1ca-467d-4a72-85ea-5a68e8591da5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [profile.check@example.com]
+2026-11-08 03:57:08.839 [main] [74ffc1ca-467d-4a72-85ea-5a68e8591da5] DEBUG c.b.s.s.JwtAuthenticationFilter - Successfully authenticated principal: profile.check@example.com with roles: [ROLE_USER]
+2026-11-08 03:57:08.843 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Node -1 disconnected.
+2026-11-08 03:57:08.843 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:08.843 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+]]></system-out>
+  </testcase>
+  <testcase name="testRegisterUserSuccess" classname="com.backendlearninglab.spring.AuthenticationAndSecurityTest" time="0.313">
+    <system-out><![CDATA[2026-11-08 03:57:08.855 [main] [9473d5b1-4c3e-4bdf-8bd4-32a570cffa47] INFO  c.b.spring.controller.AuthController - Received public registration request for: auth.test.user@example.com
+2026-11-08 03:57:08.860 [main] [9473d5b1-4c3e-4bdf-8bd4-32a570cffa47] DEBUG org.hibernate.SQL - 
+    select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-11-08 03:57:08.862 [main] [9473d5b1-4c3e-4bdf-8bd4-32a570cffa47] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [auth.test.user@example.com]
+2026-11-08 03:57:08.863 [main] [9473d5b1-4c3e-4bdf-8bd4-32a570cffa47] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:INTEGER) <- [1]
+2026-11-08 03:57:09.005 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Node -1 disconnected.
+2026-11-08 03:57:09.005 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:09.014 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:09.096 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Node -1 disconnected.
+2026-11-08 03:57:09.096 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:09.096 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:09.157 [main] [9473d5b1-4c3e-4bdf-8bd4-32a570cffa47] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        users
+        (created_at, email, full_name, password_hash, role, status, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, email, full_name, password_hash, role, status, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+2026-11-08 03:57:09.158 [main] [9473d5b1-4c3e-4bdf-8bd4-32a570cffa47] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:TIMESTAMP_UTC) <- [2026-11-07T22:27:09.157225300Z]
+2026-11-08 03:57:09.158 [main] [9473d5b1-4c3e-4bdf-8bd4-32a570cffa47] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:VARCHAR) <- [auth.test.user@example.com]
+2026-11-08 03:57:09.158 [main] [9473d5b1-4c3e-4bdf-8bd4-32a570cffa47] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:VARCHAR) <- [Auth Test User]
+2026-11-08 03:57:09.158 [main] [9473d5b1-4c3e-4bdf-8bd4-32a570cffa47] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:VARCHAR) <- [$2a$12$sIvLDBpn8whMlauImNvxdeBKdjD37o2J2oH1Hq/vAA48xzzTUQ2BO]
+2026-11-08 03:57:09.158 [main] [9473d5b1-4c3e-4bdf-8bd4-32a570cffa47] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:ENUM) <- [USER]
+2026-11-08 03:57:09.158 [main] [9473d5b1-4c3e-4bdf-8bd4-32a570cffa47] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:VARCHAR) <- [ACTIVE]
+2026-11-08 03:57:09.158 [main] [9473d5b1-4c3e-4bdf-8bd4-32a570cffa47] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:TIMESTAMP_UTC) <- [2026-11-07T22:27:09.157225300Z]
+]]></system-out>
+  </testcase>
+  <testcase name="testLoginBadCredentials" classname="com.backendlearninglab.spring.AuthenticationAndSecurityTest" time="0.553">
+    <system-out><![CDATA[2026-11-08 03:57:09.170 [main] [769a7a67-0a6a-4332-8d20-f1ad7c490da0] INFO  c.b.spring.controller.AuthController - Received public registration request for: badcred.user@example.com
+2026-11-08 03:57:09.172 [main] [769a7a67-0a6a-4332-8d20-f1ad7c490da0] DEBUG org.hibernate.SQL - 
+    select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-11-08 03:57:09.172 [main] [769a7a67-0a6a-4332-8d20-f1ad7c490da0] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [badcred.user@example.com]
+2026-11-08 03:57:09.172 [main] [769a7a67-0a6a-4332-8d20-f1ad7c490da0] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:INTEGER) <- [1]
+2026-11-08 03:57:09.435 [main] [769a7a67-0a6a-4332-8d20-f1ad7c490da0] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        users
+        (created_at, email, full_name, password_hash, role, status, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, email, full_name, password_hash, role, status, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+2026-11-08 03:57:09.435 [main] [769a7a67-0a6a-4332-8d20-f1ad7c490da0] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:TIMESTAMP_UTC) <- [2026-11-07T22:27:09.434962400Z]
+2026-11-08 03:57:09.435 [main] [769a7a67-0a6a-4332-8d20-f1ad7c490da0] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:VARCHAR) <- [badcred.user@example.com]
+2026-11-08 03:57:09.435 [main] [769a7a67-0a6a-4332-8d20-f1ad7c490da0] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:VARCHAR) <- [Bad Cred User]
+2026-11-08 03:57:09.435 [main] [769a7a67-0a6a-4332-8d20-f1ad7c490da0] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:VARCHAR) <- [$2a$12$z16TpgMc7qsVIuQoz8vCHOzqagUhl96ElKGCK6qwlwiTW40rzFYPK]
+2026-11-08 03:57:09.435 [main] [769a7a67-0a6a-4332-8d20-f1ad7c490da0] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:ENUM) <- [USER]
+2026-11-08 03:57:09.435 [main] [769a7a67-0a6a-4332-8d20-f1ad7c490da0] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:VARCHAR) <- [ACTIVE]
+2026-11-08 03:57:09.435 [main] [769a7a67-0a6a-4332-8d20-f1ad7c490da0] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:TIMESTAMP_UTC) <- [2026-11-07T22:27:09.434962400Z]
+2026-11-08 03:57:09.439 [main] [e4c6c9eb-c1e8-4d1d-957e-620f53e93640] INFO  c.b.spring.controller.AuthController - Processing login for: badcred.user@example.com
+2026-11-08 03:57:09.441 [main] [e4c6c9eb-c1e8-4d1d-957e-620f53e93640] DEBUG org.hibernate.SQL - 
+    select
+        ue1_0.id,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.full_name,
+        ue1_0.password_hash,
+        ue1_0.role,
+        ue1_0.status,
+        ue1_0.updated_at 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=?
+Hibernate: 
+    select
+        ue1_0.id,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.full_name,
+        ue1_0.password_hash,
+        ue1_0.role,
+        ue1_0.status,
+        ue1_0.updated_at 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=?
+2026-11-08 03:57:09.441 [main] [e4c6c9eb-c1e8-4d1d-957e-620f53e93640] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [badcred.user@example.com]
+2026-11-08 03:57:09.707 [main] [e4c6c9eb-c1e8-4d1d-957e-620f53e93640] WARN  c.b.s.e.GlobalExceptionHandler - Authentication failed at /api/v1/auth/login: Bad credentials
+]]></system-out>
+  </testcase>
+  <testcase name="testAccessDeniedReturns403" classname="com.backendlearninglab.spring.AuthenticationAndSecurityTest" time="0.566">
+    <system-out><![CDATA[2026-11-08 03:57:09.727 [main] [1990d185-8881-4258-9087-49cf59c9e10b] INFO  c.b.spring.controller.AuthController - Received public registration request for: regular.shopper@example.com
+2026-11-08 03:57:09.729 [main] [1990d185-8881-4258-9087-49cf59c9e10b] DEBUG org.hibernate.SQL - 
+    select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-11-08 03:57:09.730 [main] [1990d185-8881-4258-9087-49cf59c9e10b] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [regular.shopper@example.com]
+2026-11-08 03:57:09.730 [main] [1990d185-8881-4258-9087-49cf59c9e10b] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:INTEGER) <- [1]
+2026-11-08 03:57:09.877 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Node -1 disconnected.
+2026-11-08 03:57:09.877 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:09.877 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:09.995 [main] [1990d185-8881-4258-9087-49cf59c9e10b] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        users
+        (created_at, email, full_name, password_hash, role, status, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, email, full_name, password_hash, role, status, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+2026-11-08 03:57:09.996 [main] [1990d185-8881-4258-9087-49cf59c9e10b] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:TIMESTAMP_UTC) <- [2026-11-07T22:27:09.995454200Z]
+2026-11-08 03:57:09.996 [main] [1990d185-8881-4258-9087-49cf59c9e10b] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:VARCHAR) <- [regular.shopper@example.com]
+2026-11-08 03:57:09.996 [main] [1990d185-8881-4258-9087-49cf59c9e10b] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:VARCHAR) <- [Shopper]
+2026-11-08 03:57:09.996 [main] [1990d185-8881-4258-9087-49cf59c9e10b] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:VARCHAR) <- [$2a$12$iGZqdY2XUZCRCJ.VY2tcIeaYqv2CN5d7kX7wujqP0lmHwGj0SuwSm]
+2026-11-08 03:57:09.996 [main] [1990d185-8881-4258-9087-49cf59c9e10b] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:ENUM) <- [USER]
+2026-11-08 03:57:09.996 [main] [1990d185-8881-4258-9087-49cf59c9e10b] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:VARCHAR) <- [ACTIVE]
+2026-11-08 03:57:09.996 [main] [1990d185-8881-4258-9087-49cf59c9e10b] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:TIMESTAMP_UTC) <- [2026-11-07T22:27:09.995454200Z]
+2026-11-08 03:57:10.000 [main] [12056d9f-8cd9-449c-bb9b-f0e132213131] INFO  c.b.spring.controller.AuthController - Processing login for: regular.shopper@example.com
+2026-11-08 03:57:10.001 [main] [12056d9f-8cd9-449c-bb9b-f0e132213131] DEBUG org.hibernate.SQL - 
+    select
+        ue1_0.id,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.full_name,
+        ue1_0.password_hash,
+        ue1_0.role,
+        ue1_0.status,
+        ue1_0.updated_at 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=?
+Hibernate: 
+    select
+        ue1_0.id,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.full_name,
+        ue1_0.password_hash,
+        ue1_0.role,
+        ue1_0.status,
+        ue1_0.updated_at 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=?
+2026-11-08 03:57:10.002 [main] [12056d9f-8cd9-449c-bb9b-f0e132213131] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [regular.shopper@example.com]
+2026-11-08 03:57:10.005 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Node -1 disconnected.
+2026-11-08 03:57:10.005 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:10.005 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:10.131 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Node -1 disconnected.
+2026-11-08 03:57:10.131 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:10.131 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:10.272 [main] [12056d9f-8cd9-449c-bb9b-f0e132213131] INFO  c.b.spring.controller.AuthController - Issued JWT for principal: regular.shopper@example.com (Role: USER)
+2026-11-08 03:57:10.279 [main] [103e43e8-09ad-4998-b268-5f59accfe86c] DEBUG org.hibernate.SQL - 
+    select
+        ue1_0.id,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.full_name,
+        ue1_0.password_hash,
+        ue1_0.role,
+        ue1_0.status,
+        ue1_0.updated_at 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=?
+Hibernate: 
+    select
+        ue1_0.id,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.full_name,
+        ue1_0.password_hash,
+        ue1_0.role,
+        ue1_0.status,
+        ue1_0.updated_at 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=?
+2026-11-08 03:57:10.279 [main] [103e43e8-09ad-4998-b268-5f59accfe86c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [regular.shopper@example.com]
+2026-11-08 03:57:10.282 [main] [103e43e8-09ad-4998-b268-5f59accfe86c] DEBUG c.b.s.s.JwtAuthenticationFilter - Successfully authenticated principal: regular.shopper@example.com with roles: [ROLE_USER]
+]]></system-out>
+  </testcase>
+  <testcase name="testUnauthenticatedAccessReturns401" classname="com.backendlearninglab.spring.AuthenticationAndSecurityTest" time="0.01"/>
+</testsuite>

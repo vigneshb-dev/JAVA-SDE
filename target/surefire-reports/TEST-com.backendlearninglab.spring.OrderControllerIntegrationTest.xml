@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.backendlearninglab.spring.OrderControllerIntegrationTest" time="0.804" tests="3" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="G:\JAVA SDE\target\test-classes;G:\JAVA SDE\target\classes;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.3.4\spring-boot-starter-web-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter\3.3.4\spring-boot-starter-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot\3.3.4\spring-boot-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.4\spring-boot-autoconfigure-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.3.4\spring-boot-starter-logging-3.3.4.jar;C:\Users\God\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar;C:\Users\God\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\God\.m2\repository\org\slf4j\jul-to-slf4j\2.0.16\jul-to-slf4j-2.0.16.jar;C:\Users\God\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\God\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.3.4\spring-boot-starter-json-3.3.4.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.2\jackson-datatype-jdk8-2.17.2.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.2\jackson-datatype-jsr310-2.17.2.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.2\jackson-module-parameter-names-2.17.2.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.3.4\spring-boot-starter-tomcat-3.3.4.jar;C:\Users\God\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.30\tomcat-embed-core-10.1.30.jar;C:\Users\God\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.30\tomcat-embed-websocket-10.1.30.jar;C:\Users\God\.m2\repository\org\springframework\spring-web\6.1.13\spring-web-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-beans\6.1.13\spring-beans-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-webmvc\6.1.13\spring-webmvc-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-expression\6.1.13\spring-expression-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.3.4\spring-boot-starter-data-jpa-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.3.4\spring-boot-starter-aop-3.3.4.jar;C:\Users\God\.m2\repository\org\aspectj\aspectjweaver\1.9.22.1\aspectjweaver-1.9.22.1.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.3.4\spring-boot-starter-jdbc-3.3.4.jar;C:\Users\God\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\God\.m2\repository\org\springframework\spring-jdbc\6.1.13\spring-jdbc-6.1.13.jar;C:\Users\God\.m2\repository\org\hibernate\orm\hibernate-core\6.5.3.Final\hibernate-core-6.5.3.Final.jar;C:\Users\God\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\God\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\God\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\God\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\God\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\God\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\God\.m2\repository\net\bytebuddy\byte-buddy\1.14.19\byte-buddy-1.14.19.jar;C:\Users\God\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\God\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\God\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\God\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\God\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\God\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\God\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\God\.m2\repository\org\springframework\data\spring-data-jpa\3.3.4\spring-data-jpa-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\data\spring-data-commons\3.3.4\spring-data-commons-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\spring-orm\6.1.13\spring-orm-6.1.13.jar;C:\Users\God\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\God\.m2\repository\org\springframework\spring-aspects\6.1.13\spring-aspects-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.3.4\spring-boot-starter-validation-3.3.4.jar;C:\Users\God\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.30\tomcat-embed-el-10.1.30.jar;C:\Users\God\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;C:\Users\God\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.3.4\spring-boot-starter-security-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\spring-aop\6.1.13\spring-aop-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\security\spring-security-config\6.3.3\spring-security-config-6.3.3.jar;C:\Users\God\.m2\repository\org\springframework\security\spring-security-web\6.3.3\spring-security-web-6.3.3.jar;C:\Users\God\.m2\repository\io\jsonwebtoken\jjwt-api\0.12.5\jjwt-api-0.12.5.jar;C:\Users\God\.m2\repository\io\jsonwebtoken\jjwt-impl\0.12.5\jjwt-impl-0.12.5.jar;C:\Users\God\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.12.5\jjwt-jackson-0.12.5.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-data-redis\3.3.4\spring-boot-starter-data-redis-3.3.4.jar;C:\Users\God\.m2\repository\io\lettuce\lettuce-core\6.3.2.RELEASE\lettuce-core-6.3.2.RELEASE.jar;C:\Users\God\.m2\repository\io\netty\netty-common\4.1.113.Final\netty-common-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-handler\4.1.113.Final\netty-handler-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-resolver\4.1.113.Final\netty-resolver-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-buffer\4.1.113.Final\netty-buffer-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.113.Final\netty-transport-native-unix-common-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-codec\4.1.113.Final\netty-codec-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-transport\4.1.113.Final\netty-transport-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\projectreactor\reactor-core\3.6.10\reactor-core-3.6.10.jar;C:\Users\God\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\God\.m2\repository\org\springframework\data\spring-data-redis\3.3.4\spring-data-redis-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\data\spring-data-keyvalue\3.3.4\spring-data-keyvalue-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\spring-oxm\6.1.13\spring-oxm-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-cache\3.3.4\spring-boot-starter-cache-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\spring-context-support\6.1.13\spring-context-support-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\kafka\spring-kafka\3.2.4\spring-kafka-3.2.4.jar;C:\Users\God\.m2\repository\org\springframework\spring-context\6.1.13\spring-context-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-messaging\6.1.13\spring-messaging-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-tx\6.1.13\spring-tx-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\retry\spring-retry\2.0.9\spring-retry-2.0.9.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-clients\3.7.1\kafka-clients-3.7.1.jar;C:\Users\God\.m2\repository\com\github\luben\zstd-jni\1.5.6-3\zstd-jni-1.5.6-3.jar;C:\Users\God\.m2\repository\org\lz4\lz4-java\1.8.0\lz4-java-1.8.0.jar;C:\Users\God\.m2\repository\org\xerial\snappy\snappy-java\1.1.10.5\snappy-java-1.1.10.5.jar;C:\Users\God\.m2\repository\io\micrometer\micrometer-observation\1.13.4\micrometer-observation-1.13.4.jar;C:\Users\God\.m2\repository\io\micrometer\micrometer-commons\1.13.4\micrometer-commons-1.13.4.jar;C:\Users\God\.m2\repository\org\postgresql\postgresql\42.7.4\postgresql-42.7.4.jar;C:\Users\God\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\God\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.3.4\spring-boot-starter-test-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-test\3.3.4\spring-boot-test-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.3.4\spring-boot-test-autoconfigure-3.3.4.jar;C:\Users\God\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\God\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\God\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\God\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\God\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\God\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\God\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;C:\Users\God\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\God\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\God\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;C:\Users\God\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\God\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\God\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\God\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.19\byte-buddy-agent-1.14.19.jar;C:\Users\God\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\God\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;C:\Users\God\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\God\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\God\.m2\repository\org\springframework\spring-core\6.1.13\spring-core-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-jcl\6.1.13\spring-jcl-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-test\6.1.13\spring-test-6.1.13.jar;C:\Users\God\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\God\.m2\repository\org\springframework\security\spring-security-test\6.3.3\spring-security-test-6.3.3.jar;C:\Users\God\.m2\repository\org\springframework\security\spring-security-core\6.3.3\spring-security-core-6.3.3.jar;C:\Users\God\.m2\repository\org\springframework\security\spring-security-crypto\6.3.3\spring-security-crypto-6.3.3.jar;C:\Users\God\.m2\repository\org\springframework\kafka\spring-kafka-test\3.2.4\spring-kafka-test-3.2.4.jar;C:\Users\God\.m2\repository\org\apache\zookeeper\zookeeper\3.8.4\zookeeper-3.8.4.jar;C:\Users\God\.m2\repository\org\apache\zookeeper\zookeeper-jute\3.8.4\zookeeper-jute-3.8.4.jar;C:\Users\God\.m2\repository\org\apache\yetus\audience-annotations\0.12.0\audience-annotations-0.12.0.jar;C:\Users\God\.m2\repository\io\netty\netty-transport-native-epoll\4.1.113.Final\netty-transport-native-epoll-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.113.Final\netty-transport-classes-epoll-4.1.113.Final.jar;C:\Users\God\.m2\repository\ch\qos\logback\logback-core\1.5.8\logback-core-1.5.8.jar;C:\Users\God\.m2\repository\ch\qos\logback\logback-classic\1.5.8\logback-classic-1.5.8.jar;C:\Users\God\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-clients\3.7.1\kafka-clients-3.7.1-test.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-metadata\3.7.1\kafka-metadata-3.7.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-raft\3.7.1\kafka-raft-3.7.1.jar;C:\Users\God\.m2\repository\com\yammer\metrics\metrics-core\2.2.0\metrics-core-2.2.0.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-server-common\3.7.1\kafka-server-common-3.7.1.jar;C:\Users\God\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\God\.m2\repository\org\pcollections\pcollections\4.0.1\pcollections-4.0.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-server-common\3.7.1\kafka-server-common-3.7.1-test.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-streams-test-utils\3.7.1\kafka-streams-test-utils-3.7.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-streams\3.7.1\kafka-streams-3.7.1.jar;C:\Users\God\.m2\repository\org\rocksdb\rocksdbjni\7.9.2\rocksdbjni-7.9.2.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka_2.13\3.7.1\kafka_2.13-3.7.1.jar;C:\Users\God\.m2\repository\org\scala-lang\scala-library\2.13.12\scala-library-2.13.12.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-group-coordinator\3.7.1\kafka-group-coordinator-3.7.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-storage-api\3.7.1\kafka-storage-api-3.7.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-tools-api\3.7.1\kafka-tools-api-3.7.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-storage\3.7.1\kafka-storage-3.7.1.jar;C:\Users\God\.m2\repository\com\github\ben-manes\caffeine\caffeine\3.1.8\caffeine-3.1.8.jar;C:\Users\God\.m2\repository\com\google\errorprone\error_prone_annotations\2.21.1\error_prone_annotations-2.21.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-server\3.7.1\kafka-server-3.7.1.jar;C:\Users\God\.m2\repository\net\sourceforge\argparse4j\argparse4j\0.7.0\argparse4j-0.7.0.jar;C:\Users\God\.m2\repository\commons-validator\commons-validator\1.7\commons-validator-1.7.jar;C:\Users\God\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\God\.m2\repository\commons-digester\commons-digester\2.1\commons-digester-2.1.jar;C:\Users\God\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\module\jackson-module-scala_2.13\2.17.2\jackson-module-scala_2.13-2.17.2.jar;C:\Users\God\.m2\repository\com\thoughtworks\paranamer\paranamer\2.8\paranamer-2.8.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-csv\2.17.2\jackson-dataformat-csv-2.17.2.jar;C:\Users\God\.m2\repository\org\bitbucket\b_c\jose4j\0.9.4\jose4j-0.9.4.jar;C:\Users\God\.m2\repository\org\scala-lang\modules\scala-collection-compat_2.13\2.10.0\scala-collection-compat_2.13-2.10.0.jar;C:\Users\God\.m2\repository\org\scala-lang\modules\scala-java8-compat_2.13\1.0.2\scala-java8-compat_2.13-1.0.2.jar;C:\Users\God\.m2\repository\org\scala-lang\scala-reflect\2.13.12\scala-reflect-2.13.12.jar;C:\Users\God\.m2\repository\com\typesafe\scala-logging\scala-logging_2.13\3.9.4\scala-logging_2.13-3.9.4.jar;C:\Users\God\.m2\repository\io\dropwizard\metrics\metrics-core\4.1.12.1\metrics-core-4.1.12.1.jar;C:\Users\God\.m2\repository\commons-cli\commons-cli\1.4\commons-cli-1.4.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka_2.13\3.7.1\kafka_2.13-3.7.1-test.jar;C:\Users\God\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\God\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\God\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\God\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\God\.m2\repository\org\junit\platform\junit-platform-launcher\1.10.3\junit-platform-launcher-1.10.3.jar;C:\Users\God\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-25.0.5.0.3\bin"/>
+    <property name="sun.java.command" value="C:\Users\God\AppData\Local\Temp\surefire6041986229220644478\surefirebooter-20261108035645693_3.jar C:\Users\God\AppData\Local\Temp\surefire6041986229220644478 2026-11-08T03-56-45_529-jvmRun1 surefire-20261108035645693_1tmp surefire_0-20261108035645693_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="G:\JAVA SDE\target\test-classes;G:\JAVA SDE\target\classes;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.3.4\spring-boot-starter-web-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter\3.3.4\spring-boot-starter-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot\3.3.4\spring-boot-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.4\spring-boot-autoconfigure-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.3.4\spring-boot-starter-logging-3.3.4.jar;C:\Users\God\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar;C:\Users\God\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\God\.m2\repository\org\slf4j\jul-to-slf4j\2.0.16\jul-to-slf4j-2.0.16.jar;C:\Users\God\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\God\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.3.4\spring-boot-starter-json-3.3.4.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.2\jackson-datatype-jdk8-2.17.2.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.2\jackson-datatype-jsr310-2.17.2.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.2\jackson-module-parameter-names-2.17.2.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.3.4\spring-boot-starter-tomcat-3.3.4.jar;C:\Users\God\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.30\tomcat-embed-core-10.1.30.jar;C:\Users\God\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.30\tomcat-embed-websocket-10.1.30.jar;C:\Users\God\.m2\repository\org\springframework\spring-web\6.1.13\spring-web-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-beans\6.1.13\spring-beans-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-webmvc\6.1.13\spring-webmvc-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-expression\6.1.13\spring-expression-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.3.4\spring-boot-starter-data-jpa-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.3.4\spring-boot-starter-aop-3.3.4.jar;C:\Users\God\.m2\repository\org\aspectj\aspectjweaver\1.9.22.1\aspectjweaver-1.9.22.1.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.3.4\spring-boot-starter-jdbc-3.3.4.jar;C:\Users\God\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\God\.m2\repository\org\springframework\spring-jdbc\6.1.13\spring-jdbc-6.1.13.jar;C:\Users\God\.m2\repository\org\hibernate\orm\hibernate-core\6.5.3.Final\hibernate-core-6.5.3.Final.jar;C:\Users\God\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\God\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\God\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\God\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\God\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\God\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\God\.m2\repository\net\bytebuddy\byte-buddy\1.14.19\byte-buddy-1.14.19.jar;C:\Users\God\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\God\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\God\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\God\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\God\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\God\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\God\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\God\.m2\repository\org\springframework\data\spring-data-jpa\3.3.4\spring-data-jpa-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\data\spring-data-commons\3.3.4\spring-data-commons-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\spring-orm\6.1.13\spring-orm-6.1.13.jar;C:\Users\God\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\God\.m2\repository\org\springframework\spring-aspects\6.1.13\spring-aspects-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.3.4\spring-boot-starter-validation-3.3.4.jar;C:\Users\God\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.30\tomcat-embed-el-10.1.30.jar;C:\Users\God\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;C:\Users\God\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.3.4\spring-boot-starter-security-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\spring-aop\6.1.13\spring-aop-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\security\spring-security-config\6.3.3\spring-security-config-6.3.3.jar;C:\Users\God\.m2\repository\org\springframework\security\spring-security-web\6.3.3\spring-security-web-6.3.3.jar;C:\Users\God\.m2\repository\io\jsonwebtoken\jjwt-api\0.12.5\jjwt-api-0.12.5.jar;C:\Users\God\.m2\repository\io\jsonwebtoken\jjwt-impl\0.12.5\jjwt-impl-0.12.5.jar;C:\Users\God\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.12.5\jjwt-jackson-0.12.5.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-data-redis\3.3.4\spring-boot-starter-data-redis-3.3.4.jar;C:\Users\God\.m2\repository\io\lettuce\lettuce-core\6.3.2.RELEASE\lettuce-core-6.3.2.RELEASE.jar;C:\Users\God\.m2\repository\io\netty\netty-common\4.1.113.Final\netty-common-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-handler\4.1.113.Final\netty-handler-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-resolver\4.1.113.Final\netty-resolver-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-buffer\4.1.113.Final\netty-buffer-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.113.Final\netty-transport-native-unix-common-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-codec\4.1.113.Final\netty-codec-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-transport\4.1.113.Final\netty-transport-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\projectreactor\reactor-core\3.6.10\reactor-core-3.6.10.jar;C:\Users\God\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\God\.m2\repository\org\springframework\data\spring-data-redis\3.3.4\spring-data-redis-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\data\spring-data-keyvalue\3.3.4\spring-data-keyvalue-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\spring-oxm\6.1.13\spring-oxm-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-cache\3.3.4\spring-boot-starter-cache-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\spring-context-support\6.1.13\spring-context-support-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\kafka\spring-kafka\3.2.4\spring-kafka-3.2.4.jar;C:\Users\God\.m2\repository\org\springframework\spring-context\6.1.13\spring-context-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-messaging\6.1.13\spring-messaging-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-tx\6.1.13\spring-tx-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\retry\spring-retry\2.0.9\spring-retry-2.0.9.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-clients\3.7.1\kafka-clients-3.7.1.jar;C:\Users\God\.m2\repository\com\github\luben\zstd-jni\1.5.6-3\zstd-jni-1.5.6-3.jar;C:\Users\God\.m2\repository\org\lz4\lz4-java\1.8.0\lz4-java-1.8.0.jar;C:\Users\God\.m2\repository\org\xerial\snappy\snappy-java\1.1.10.5\snappy-java-1.1.10.5.jar;C:\Users\God\.m2\repository\io\micrometer\micrometer-observation\1.13.4\micrometer-observation-1.13.4.jar;C:\Users\God\.m2\repository\io\micrometer\micrometer-commons\1.13.4\micrometer-commons-1.13.4.jar;C:\Users\God\.m2\repository\org\postgresql\postgresql\42.7.4\postgresql-42.7.4.jar;C:\Users\God\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\God\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.3.4\spring-boot-starter-test-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-test\3.3.4\spring-boot-test-3.3.4.jar;C:\Users\God\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.3.4\spring-boot-test-autoconfigure-3.3.4.jar;C:\Users\God\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\God\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\God\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\God\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\God\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\God\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\God\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;C:\Users\God\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\God\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\God\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;C:\Users\God\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\God\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\God\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\God\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.19\byte-buddy-agent-1.14.19.jar;C:\Users\God\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\God\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;C:\Users\God\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\God\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\God\.m2\repository\org\springframework\spring-core\6.1.13\spring-core-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-jcl\6.1.13\spring-jcl-6.1.13.jar;C:\Users\God\.m2\repository\org\springframework\spring-test\6.1.13\spring-test-6.1.13.jar;C:\Users\God\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\God\.m2\repository\org\springframework\security\spring-security-test\6.3.3\spring-security-test-6.3.3.jar;C:\Users\God\.m2\repository\org\springframework\security\spring-security-core\6.3.3\spring-security-core-6.3.3.jar;C:\Users\God\.m2\repository\org\springframework\security\spring-security-crypto\6.3.3\spring-security-crypto-6.3.3.jar;C:\Users\God\.m2\repository\org\springframework\kafka\spring-kafka-test\3.2.4\spring-kafka-test-3.2.4.jar;C:\Users\God\.m2\repository\org\apache\zookeeper\zookeeper\3.8.4\zookeeper-3.8.4.jar;C:\Users\God\.m2\repository\org\apache\zookeeper\zookeeper-jute\3.8.4\zookeeper-jute-3.8.4.jar;C:\Users\God\.m2\repository\org\apache\yetus\audience-annotations\0.12.0\audience-annotations-0.12.0.jar;C:\Users\God\.m2\repository\io\netty\netty-transport-native-epoll\4.1.113.Final\netty-transport-native-epoll-4.1.113.Final.jar;C:\Users\God\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.113.Final\netty-transport-classes-epoll-4.1.113.Final.jar;C:\Users\God\.m2\repository\ch\qos\logback\logback-core\1.5.8\logback-core-1.5.8.jar;C:\Users\God\.m2\repository\ch\qos\logback\logback-classic\1.5.8\logback-classic-1.5.8.jar;C:\Users\God\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-clients\3.7.1\kafka-clients-3.7.1-test.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-metadata\3.7.1\kafka-metadata-3.7.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-raft\3.7.1\kafka-raft-3.7.1.jar;C:\Users\God\.m2\repository\com\yammer\metrics\metrics-core\2.2.0\metrics-core-2.2.0.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-server-common\3.7.1\kafka-server-common-3.7.1.jar;C:\Users\God\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\God\.m2\repository\org\pcollections\pcollections\4.0.1\pcollections-4.0.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-server-common\3.7.1\kafka-server-common-3.7.1-test.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-streams-test-utils\3.7.1\kafka-streams-test-utils-3.7.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-streams\3.7.1\kafka-streams-3.7.1.jar;C:\Users\God\.m2\repository\org\rocksdb\rocksdbjni\7.9.2\rocksdbjni-7.9.2.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka_2.13\3.7.1\kafka_2.13-3.7.1.jar;C:\Users\God\.m2\repository\org\scala-lang\scala-library\2.13.12\scala-library-2.13.12.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-group-coordinator\3.7.1\kafka-group-coordinator-3.7.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-storage-api\3.7.1\kafka-storage-api-3.7.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-tools-api\3.7.1\kafka-tools-api-3.7.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-storage\3.7.1\kafka-storage-3.7.1.jar;C:\Users\God\.m2\repository\com\github\ben-manes\caffeine\caffeine\3.1.8\caffeine-3.1.8.jar;C:\Users\God\.m2\repository\com\google\errorprone\error_prone_annotations\2.21.1\error_prone_annotations-2.21.1.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka-server\3.7.1\kafka-server-3.7.1.jar;C:\Users\God\.m2\repository\net\sourceforge\argparse4j\argparse4j\0.7.0\argparse4j-0.7.0.jar;C:\Users\God\.m2\repository\commons-validator\commons-validator\1.7\commons-validator-1.7.jar;C:\Users\God\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\God\.m2\repository\commons-digester\commons-digester\2.1\commons-digester-2.1.jar;C:\Users\God\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\module\jackson-module-scala_2.13\2.17.2\jackson-module-scala_2.13-2.17.2.jar;C:\Users\God\.m2\repository\com\thoughtworks\paranamer\paranamer\2.8\paranamer-2.8.jar;C:\Users\God\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-csv\2.17.2\jackson-dataformat-csv-2.17.2.jar;C:\Users\God\.m2\repository\org\bitbucket\b_c\jose4j\0.9.4\jose4j-0.9.4.jar;C:\Users\God\.m2\repository\org\scala-lang\modules\scala-collection-compat_2.13\2.10.0\scala-collection-compat_2.13-2.10.0.jar;C:\Users\God\.m2\repository\org\scala-lang\modules\scala-java8-compat_2.13\1.0.2\scala-java8-compat_2.13-1.0.2.jar;C:\Users\God\.m2\repository\org\scala-lang\scala-reflect\2.13.12\scala-reflect-2.13.12.jar;C:\Users\God\.m2\repository\com\typesafe\scala-logging\scala-logging_2.13\3.9.4\scala-logging_2.13-3.9.4.jar;C:\Users\God\.m2\repository\io\dropwizard\metrics\metrics-core\4.1.12.1\metrics-core-4.1.12.1.jar;C:\Users\God\.m2\repository\commons-cli\commons-cli\1.4\commons-cli-1.4.jar;C:\Users\God\.m2\repository\org\apache\kafka\kafka_2.13\3.7.1\kafka_2.13-3.7.1-test.jar;C:\Users\God\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\God\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\God\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\God\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\God\.m2\repository\org\junit\platform\junit-platform-launcher\1.10.3\junit-platform-launcher-1.10.3.jar;C:\Users\God\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\God"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-10-25"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-25.0.5.0.3"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="G:\JAVA SDE"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\God\AppData\Local\Temp\surefire6041986229220644478\surefirebooter-20261108035645693_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.5.0.3+1-LTS-2"/>
+    <property name="user.name" value="God"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\God\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\God\AppData\Local\Temp\"/>
+    <property name="java.version" value="25.0.5.0.3"/>
+    <property name="user.dir" value="G:\JAVA SDE"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="5512"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-25.0.5.0.3\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/God/.gemini/antigravity/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\dotnet\;C:\Program Files\apache-maven-3.9.16\bin;C:\Program Files\Git\cmd;C:\Users\God\AppData\Local\Programs\Python\Python315\Scripts\;C:\Users\God\AppData\Local\Programs\Python\Python315\;C:\Users\God\AppData\Local\Microsoft\WindowsApps;C:\Users\God\AppData\Local\Kingsoft\WPS Office\12.1.0.27458\clitool;C:\Users\God\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\God\AppData\Local\GitHubCopilotCLI\;C:\Users\God\AppData\Local\Programs\Microsoft VS Code\bin\copilot-shim;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.0.5.0.3+1-LTS-2"/>
+    <property name="stdin.encoding" value="Cp1252"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[orderflow-backend] "/>
+  </properties>
+  <testcase name="testOrderPlacementFlow" classname="com.backendlearninglab.spring.OrderControllerIntegrationTest" time="0.473">
+    <system-out><![CDATA[2026-11-08 03:57:14.157 [main] [SYSTEM] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.backendlearninglab.spring.OrderControllerIntegrationTest]: OrderControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-08 03:57:14.170 [main] [SYSTEM] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.backendlearninglab.OrderFlowSpringBootApplication for test class com.backendlearninglab.spring.OrderControllerIntegrationTest
+2026-11-08 03:57:14.222 [main] [d87b2030-ecaf-4c22-9804-f77ccc4126d7] DEBUG org.hibernate.SQL - 
+    select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-11-08 03:57:14.224 [main] [d87b2030-ecaf-4c22-9804-f77ccc4126d7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [buyer.john@example.com]
+2026-11-08 03:57:14.224 [main] [d87b2030-ecaf-4c22-9804-f77ccc4126d7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:INTEGER) <- [1]
+2026-11-08 03:57:14.483 [main] [d87b2030-ecaf-4c22-9804-f77ccc4126d7] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        users
+        (created_at, email, full_name, password_hash, role, status, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, email, full_name, password_hash, role, status, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+2026-11-08 03:57:14.483 [main] [d87b2030-ecaf-4c22-9804-f77ccc4126d7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:TIMESTAMP_UTC) <- [2026-11-07T22:27:14.483392200Z]
+2026-11-08 03:57:14.483 [main] [d87b2030-ecaf-4c22-9804-f77ccc4126d7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:VARCHAR) <- [buyer.john@example.com]
+2026-11-08 03:57:14.483 [main] [d87b2030-ecaf-4c22-9804-f77ccc4126d7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:VARCHAR) <- [John Buyer]
+2026-11-08 03:57:14.483 [main] [d87b2030-ecaf-4c22-9804-f77ccc4126d7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:VARCHAR) <- [$2a$12$39LaeH8IyrtVATmTjPQ3fu/pyVYV0oFwfiiTO0nnKB.jVlZjSx44i]
+2026-11-08 03:57:14.483 [main] [d87b2030-ecaf-4c22-9804-f77ccc4126d7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:ENUM) <- [CUSTOMER]
+2026-11-08 03:57:14.484 [main] [d87b2030-ecaf-4c22-9804-f77ccc4126d7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:VARCHAR) <- [ACTIVE]
+2026-11-08 03:57:14.484 [main] [d87b2030-ecaf-4c22-9804-f77ccc4126d7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:TIMESTAMP_UTC) <- [2026-11-07T22:27:14.483392200Z]
+2026-11-08 03:57:14.506 [main] [0008f52e-0402-438b-a38d-b4363a9e417b] DEBUG org.hibernate.SQL - 
+    select
+        pe1_0.id 
+    from
+        products pe1_0 
+    where
+        pe1_0.sku=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        pe1_0.id 
+    from
+        products pe1_0 
+    where
+        pe1_0.sku=? 
+    fetch
+        first ? rows only
+2026-11-08 03:57:14.507 [main] [0008f52e-0402-438b-a38d-b4363a9e417b] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [DESK-STAND-01]
+2026-11-08 03:57:14.507 [main] [0008f52e-0402-438b-a38d-b4363a9e417b] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:INTEGER) <- [1]
+2026-11-08 03:57:14.508 [main] [0008f52e-0402-438b-a38d-b4363a9e417b] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        products
+        (is_active, category, created_at, description, name, price, sku, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        products
+        (is_active, category, created_at, description, name, price, sku, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, default)
+2026-11-08 03:57:14.508 [main] [0008f52e-0402-438b-a38d-b4363a9e417b] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BOOLEAN) <- [true]
+2026-11-08 03:57:14.508 [main] [0008f52e-0402-438b-a38d-b4363a9e417b] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:VARCHAR) <- [FURNITURE]
+2026-11-08 03:57:14.509 [main] [0008f52e-0402-438b-a38d-b4363a9e417b] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:TIMESTAMP_UTC) <- [2026-11-07T22:27:14.508460500Z]
+2026-11-08 03:57:14.509 [main] [0008f52e-0402-438b-a38d-b4363a9e417b] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:VARCHAR) <- [Electric]
+2026-11-08 03:57:14.509 [main] [0008f52e-0402-438b-a38d-b4363a9e417b] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:VARCHAR) <- [Standing Desk]
+2026-11-08 03:57:14.509 [main] [0008f52e-0402-438b-a38d-b4363a9e417b] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:NUMERIC) <- [350.00]
+2026-11-08 03:57:14.509 [main] [0008f52e-0402-438b-a38d-b4363a9e417b] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:VARCHAR) <- [DESK-STAND-01]
+2026-11-08 03:57:14.509 [main] [0008f52e-0402-438b-a38d-b4363a9e417b] TRACE org.hibernate.orm.jdbc.bind - binding parameter (8:TIMESTAMP_UTC) <- [2026-11-07T22:27:14.508460500Z]
+2026-11-08 03:57:14.511 [main] [0008f52e-0402-438b-a38d-b4363a9e417b] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        inventory
+        (available_stock, last_restocked_at, reserved_stock, warehouse_location, product_id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        inventory
+        (available_stock, last_restocked_at, reserved_stock, warehouse_location, product_id) 
+    values
+        (?, ?, ?, ?, ?)
+2026-11-08 03:57:14.511 [main] [0008f52e-0402-438b-a38d-b4363a9e417b] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:INTEGER) <- [10]
+2026-11-08 03:57:14.511 [main] [0008f52e-0402-438b-a38d-b4363a9e417b] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:TIMESTAMP_UTC) <- [2026-11-07T22:27:14.510465300Z]
+2026-11-08 03:57:14.511 [main] [0008f52e-0402-438b-a38d-b4363a9e417b] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:INTEGER) <- [0]
+2026-11-08 03:57:14.511 [main] [0008f52e-0402-438b-a38d-b4363a9e417b] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:VARCHAR) <- [MAIN-WH-01]
+2026-11-08 03:57:14.511 [main] [0008f52e-0402-438b-a38d-b4363a9e417b] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:BIGINT) <- [3]
+2026-11-08 03:57:14.572 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Node -1 disconnected.
+2026-11-08 03:57:14.573 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] INFO  c.b.spring.service.OrderJpaService - Starting @Transactional order placement for user ID: 3
+2026-11-08 03:57:14.573 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:14.574 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-2, groupId=orderflow-notification-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:14.574 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] DEBUG org.hibernate.SQL - 
+    select
+        ue1_0.id,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.full_name,
+        ue1_0.password_hash,
+        ue1_0.role,
+        ue1_0.status,
+        ue1_0.updated_at 
+    from
+        users ue1_0 
+    where
+        ue1_0.id=?
+Hibernate: 
+    select
+        ue1_0.id,
+        ue1_0.created_at,
+        ue1_0.email,
+        ue1_0.full_name,
+        ue1_0.password_hash,
+        ue1_0.role,
+        ue1_0.status,
+        ue1_0.updated_at 
+    from
+        users ue1_0 
+    where
+        ue1_0.id=?
+2026-11-08 03:57:14.575 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [3]
+2026-11-08 03:57:14.576 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] DEBUG org.hibernate.SQL - 
+    select
+        pe1_0.id,
+        pe1_0.is_active,
+        pe1_0.category,
+        pe1_0.created_at,
+        pe1_0.description,
+        pe1_0.name,
+        pe1_0.price,
+        pe1_0.sku,
+        pe1_0.updated_at 
+    from
+        products pe1_0 
+    where
+        pe1_0.id=?
+Hibernate: 
+    select
+        pe1_0.id,
+        pe1_0.is_active,
+        pe1_0.category,
+        pe1_0.created_at,
+        pe1_0.description,
+        pe1_0.name,
+        pe1_0.price,
+        pe1_0.sku,
+        pe1_0.updated_at 
+    from
+        products pe1_0 
+    where
+        pe1_0.id=?
+2026-11-08 03:57:14.576 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [3]
+2026-11-08 03:57:14.578 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] DEBUG org.hibernate.SQL - 
+    update
+        inventory ie1_0 
+    set
+        available_stock=(ie1_0.available_stock-cast(? as integer)),
+        reserved_stock=(ie1_0.reserved_stock+cast(? as integer)) 
+    where
+        ie1_0.product_id=? 
+        and ie1_0.available_stock>=?
+Hibernate: 
+    update
+        inventory ie1_0 
+    set
+        available_stock=(ie1_0.available_stock-cast(? as integer)),
+        reserved_stock=(ie1_0.reserved_stock+cast(? as integer)) 
+    where
+        ie1_0.product_id=? 
+        and ie1_0.available_stock>=?
+2026-11-08 03:57:14.579 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:INTEGER) <- [2]
+2026-11-08 03:57:14.580 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:INTEGER) <- [2]
+2026-11-08 03:57:14.580 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:BIGINT) <- [3]
+2026-11-08 03:57:14.580 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:INTEGER) <- [2]
+2026-11-08 03:57:14.581 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        orders
+        (created_at, order_number, shipping_address, status, total_amount, updated_at, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        orders
+        (created_at, order_number, shipping_address, status, total_amount, updated_at, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+2026-11-08 03:57:14.581 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:TIMESTAMP_UTC) <- [2026-11-07T22:27:14.580654200Z]
+2026-11-08 03:57:14.581 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:VARCHAR) <- [ORD-1794090434575-2DB1]
+2026-11-08 03:57:14.581 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:VARCHAR) <- [500 Tech Blvd, Silicon Valley, CA]
+2026-11-08 03:57:14.581 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:ENUM) <- [PENDING]
+2026-11-08 03:57:14.581 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:NUMERIC) <- [700.00]
+2026-11-08 03:57:14.581 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:TIMESTAMP_UTC) <- [2026-11-07T22:27:14.580654200Z]
+2026-11-08 03:57:14.582 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:BIGINT) <- [3]
+2026-11-08 03:57:14.583 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        order_items
+        (order_id, product_id, quantity, subtotal, unit_price, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        order_items
+        (order_id, product_id, quantity, subtotal, unit_price, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+2026-11-08 03:57:14.583 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [3]
+2026-11-08 03:57:14.583 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [3]
+2026-11-08 03:57:14.583 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:INTEGER) <- [2]
+2026-11-08 03:57:14.583 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:NUMERIC) <- [700.00]
+2026-11-08 03:57:14.583 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:NUMERIC) <- [350.00]
+2026-11-08 03:57:14.583 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] INFO  c.b.spring.service.OrderJpaService - Transaction committed successfully for order ORD-1794090434575-2DB1. Total: $700.00
+2026-11-08 03:57:14.584 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        outbox_events
+        (aggregate_id, aggregate_type, created_at, event_type, payload, processed_at, retry_count, status, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        outbox_events
+        (aggregate_id, aggregate_type, created_at, event_type, payload, processed_at, retry_count, status, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, default)
+2026-11-08 03:57:14.584 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [ORD-1794090434575-2DB1]
+2026-11-08 03:57:14.584 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:VARCHAR) <- [ORDER]
+2026-11-08 03:57:14.584 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:TIMESTAMP_UTC) <- [2026-11-07T22:27:14.584666800Z]
+2026-11-08 03:57:14.585 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:VARCHAR) <- [OrderCreatedEvent]
+2026-11-08 03:57:14.585 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:VARCHAR) <- [{"eventId":"bafb6918-8e18-4cc6-9be1-ba2bf7b6ccde","orderId":3,"orderNumber":"ORD-1794090434575-2DB1","userId":3,"customerEmail":"buyer.john@example.com","totalAmount":700.00,"items":[{"productId":3,"quantity":2,"unitPrice":350.00}],"occurredAt":"2026-11-07T22:27:14.584666800Z"}]
+2026-11-08 03:57:14.585 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:TIMESTAMP_UTC) <- [null]
+2026-11-08 03:57:14.585 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:INTEGER) <- [0]
+2026-11-08 03:57:14.585 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] TRACE org.hibernate.orm.jdbc.bind - binding parameter (8:ENUM) <- [PENDING]
+2026-11-08 03:57:14.585 [main] [9b201690-5bfd-412a-a7c3-e94217cd089c] INFO  c.b.spring.service.OrderJpaService - Saved OrderCreatedEvent to Transactional Outbox [Order #ORD-1794090434575-2DB1]
+2026-11-08 03:57:14.600 [main] [6f156936-27e7-4060-af19-ef1429a4ab9b] DEBUG org.hibernate.SQL - 
+    select
+        ie1_0.product_id,
+        ie1_0.available_stock,
+        ie1_0.last_restocked_at,
+        ie1_0.reserved_stock,
+        ie1_0.warehouse_location 
+    from
+        inventory ie1_0 
+    where
+        ie1_0.product_id=?
+Hibernate: 
+    select
+        ie1_0.product_id,
+        ie1_0.available_stock,
+        ie1_0.last_restocked_at,
+        ie1_0.reserved_stock,
+        ie1_0.warehouse_location 
+    from
+        inventory ie1_0 
+    where
+        ie1_0.product_id=?
+2026-11-08 03:57:14.601 [main] [6f156936-27e7-4060-af19-ef1429a4ab9b] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [3]
+2026-11-08 03:57:14.601 [main] [6f156936-27e7-4060-af19-ef1429a4ab9b] DEBUG org.hibernate.SQL - 
+    select
+        pe1_0.id,
+        pe1_0.is_active,
+        pe1_0.category,
+        pe1_0.created_at,
+        pe1_0.description,
+        pe1_0.name,
+        pe1_0.price,
+        pe1_0.sku,
+        pe1_0.updated_at 
+    from
+        products pe1_0 
+    where
+        pe1_0.id=?
+Hibernate: 
+    select
+        pe1_0.id,
+        pe1_0.is_active,
+        pe1_0.category,
+        pe1_0.created_at,
+        pe1_0.description,
+        pe1_0.name,
+        pe1_0.price,
+        pe1_0.sku,
+        pe1_0.updated_at 
+    from
+        products pe1_0 
+    where
+        pe1_0.id=?
+2026-11-08 03:57:14.601 [main] [6f156936-27e7-4060-af19-ef1429a4ab9b] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [3]
+2026-11-08 03:57:14.626 [main] [396a52b9-5ee8-4eb9-9444-4da856b01e55] DEBUG org.hibernate.SQL - 
+    select
+        distinct oe1_0.id,
+        oe1_0.created_at,
+        i1_0.order_id,
+        i1_0.id,
+        i1_0.product_id,
+        i1_0.quantity,
+        i1_0.subtotal,
+        i1_0.unit_price,
+        oe1_0.order_number,
+        oe1_0.shipping_address,
+        oe1_0.status,
+        oe1_0.total_amount,
+        oe1_0.updated_at,
+        oe1_0.user_id,
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.status,
+        u1_0.updated_at 
+    from
+        orders oe1_0 
+    left join
+        order_items i1_0 
+            on oe1_0.id=i1_0.order_id 
+    left join
+        users u1_0 
+            on u1_0.id=oe1_0.user_id 
+    where
+        oe1_0.id=?
+Hibernate: 
+    select
+        distinct oe1_0.id,
+        oe1_0.created_at,
+        i1_0.order_id,
+        i1_0.id,
+        i1_0.product_id,
+        i1_0.quantity,
+        i1_0.subtotal,
+        i1_0.unit_price,
+        oe1_0.order_number,
+        oe1_0.shipping_address,
+        oe1_0.status,
+        oe1_0.total_amount,
+        oe1_0.updated_at,
+        oe1_0.user_id,
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.status,
+        u1_0.updated_at 
+    from
+        orders oe1_0 
+    left join
+        order_items i1_0 
+            on oe1_0.id=i1_0.order_id 
+    left join
+        users u1_0 
+            on u1_0.id=oe1_0.user_id 
+    where
+        oe1_0.id=?
+2026-11-08 03:57:14.628 [main] [396a52b9-5ee8-4eb9-9444-4da856b01e55] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [3]
+2026-11-08 03:57:14.637 [main] [396a52b9-5ee8-4eb9-9444-4da856b01e55] DEBUG org.hibernate.SQL - 
+    select
+        pe1_0.id,
+        pe1_0.is_active,
+        pe1_0.category,
+        pe1_0.created_at,
+        pe1_0.description,
+        pe1_0.name,
+        pe1_0.price,
+        pe1_0.sku,
+        pe1_0.updated_at 
+    from
+        products pe1_0 
+    where
+        pe1_0.id=?
+Hibernate: 
+    select
+        pe1_0.id,
+        pe1_0.is_active,
+        pe1_0.category,
+        pe1_0.created_at,
+        pe1_0.description,
+        pe1_0.name,
+        pe1_0.price,
+        pe1_0.sku,
+        pe1_0.updated_at 
+    from
+        products pe1_0 
+    where
+        pe1_0.id=?
+2026-11-08 03:57:14.637 [main] [396a52b9-5ee8-4eb9-9444-4da856b01e55] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [3]
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateUserSuccess" classname="com.backendlearninglab.spring.OrderControllerIntegrationTest" time="0.281">
+    <system-out><![CDATA[2026-11-08 03:57:14.660 [main] [8fff4ed8-8941-4829-9324-79cc764b1079] DEBUG org.hibernate.SQL - 
+    select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        ue1_0.id 
+    from
+        users ue1_0 
+    where
+        ue1_0.email=? 
+    fetch
+        first ? rows only
+2026-11-08 03:57:14.660 [main] [8fff4ed8-8941-4829-9324-79cc764b1079] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [sarah.connor@example.com]
+2026-11-08 03:57:14.660 [main] [8fff4ed8-8941-4829-9324-79cc764b1079] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:INTEGER) <- [1]
+2026-11-08 03:57:14.723 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-6, groupId=orderflow-dlt-monitor-service] Node -1 disconnected.
+2026-11-08 03:57:14.724 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-6, groupId=orderflow-dlt-monitor-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:14.724 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-6, groupId=orderflow-dlt-monitor-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:14.780 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Node -1 disconnected.
+2026-11-08 03:57:14.780 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:14.780 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-1, groupId=orderflow-inventory-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:14.818 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-4, groupId=orderflow-inventory-service] Node -1 disconnected.
+2026-11-08 03:57:14.818 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-4, groupId=orderflow-inventory-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:14.818 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-inventory-service-4, groupId=orderflow-inventory-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:14.868 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-5, groupId=orderflow-notification-service] Node -1 disconnected.
+2026-11-08 03:57:14.868 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-5, groupId=orderflow-notification-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:14.868 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-notification-service-5, groupId=orderflow-notification-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:14.879 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Node -1 disconnected.
+2026-11-08 03:57:14.879 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-11-08 03:57:14.879 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [SYSTEM] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-orderflow-dlt-monitor-service-3, groupId=orderflow-dlt-monitor-service] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-11-08 03:57:14.926 [main] [8fff4ed8-8941-4829-9324-79cc764b1079] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        users
+        (created_at, email, full_name, password_hash, role, status, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, email, full_name, password_hash, role, status, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+2026-11-08 03:57:14.927 [main] [8fff4ed8-8941-4829-9324-79cc764b1079] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:TIMESTAMP_UTC) <- [2026-11-07T22:27:14.926572200Z]
+2026-11-08 03:57:14.927 [main] [8fff4ed8-8941-4829-9324-79cc764b1079] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:VARCHAR) <- [sarah.connor@example.com]
+2026-11-08 03:57:14.927 [main] [8fff4ed8-8941-4829-9324-79cc764b1079] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:VARCHAR) <- [Sarah Connor]
+2026-11-08 03:57:14.927 [main] [8fff4ed8-8941-4829-9324-79cc764b1079] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:VARCHAR) <- [$2a$12$d237iLRxVoXA3Lxe9kKfP.QDkeOuxTLNq8nYYVMeJ//Pcdf/eTlXa]
+2026-11-08 03:57:14.927 [main] [8fff4ed8-8941-4829-9324-79cc764b1079] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:ENUM) <- [CUSTOMER]
+2026-11-08 03:57:14.927 [main] [8fff4ed8-8941-4829-9324-79cc764b1079] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:VARCHAR) <- [ACTIVE]
+2026-11-08 03:57:14.927 [main] [8fff4ed8-8941-4829-9324-79cc764b1079] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:TIMESTAMP_UTC) <- [2026-11-07T22:27:14.926572200Z]
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateUserValidationFailure" classname="com.backendlearninglab.spring.OrderControllerIntegrationTest" time="0.017">
+    <system-out><![CDATA[2026-11-08 03:57:14.944 [main] [e25d91ff-3780-4141-b412-ae99de7fc630] WARN  c.b.s.e.GlobalExceptionHandler - Validation failed for request to /api/v1/users: {password=Password must be between 8 and 64 characters, fullName=Full name is required, email=Must be a valid email format}
+]]></system-out>
+  </testcase>
+</testsuite>

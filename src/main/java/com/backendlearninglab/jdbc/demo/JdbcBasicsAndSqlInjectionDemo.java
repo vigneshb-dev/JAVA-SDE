@@ -1,0 +1,123 @@
+package com.backendlearninglab.jdbc.demo;
+
+import com.backendlearninglab.util.ConnectionManager;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import javax.sql.DataSource;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+/**
+ * EDUCATIONAL DEMO: Statement vs. PreparedStatement & SQL Injection Vulnerability.
+ * <p>
+ * This class demonstrates:
+ * 1. How naive String concatenation in java.sql.Statement allows an attacker to bypass authentication.
+ * 2. Why java.sql.PreparedStatement makes SQL Injection fundamentally impossible.
+ */
+public class JdbcBasicsAndSqlInjectionDemo {
+
+    private static final Logger log = LoggerFactory.getLogger(JdbcBasicsAndSqlInjectionDemo.class);
+
+    public static void main(String[] args) {
+        System.out.println("=== JDBC STATEMENT VS PREPAREDSTATEMENT (SQL INJECTION) ===");
+
+        DataSource ds = ConnectionManager.createH2FallbackDataSource();
+        setupDemoTable(ds);
+
+        // Simulation of malicious user input from a web form
+        String maliciousEmail = "admin@orderflow.internal' OR '1'='1";
+        String dummyPassword = "arbitrary_password";
+
+        System.out.println("\n[1] Executing Unsafe Query with java.sql.Statement (String Concatenation):");
+        runVulnerableStatementLogin(ds, maliciousEmail, dummyPassword);
+
+        System.out.println("\n[2] Executing Secure Query with java.sql.PreparedStatement (Parameterized Query):");
+        runSecurePreparedStatementLogin(ds, maliciousEmail, dummyPassword);
+    }
+
+    /**
+     * VULNERABLE IMPLEMENTATION (DO NOT USE IN PRODUCTION)
+     * <p>
+     * WHAT HAPPENS:
+     * The input string is concatenated directly into the SQL string.
+     * SQL string becomes:
+     *   SELECT * FROM users WHERE email = 'admin@orderflow.internal' OR '1'='1' AND password_hash = '...'
+     * Because '1'='1' is always TRUE, the WHERE clause evaluates to TRUE for every row!
+     * The attacker logs in as the administrator without knowing any password.
+     */
+    private static void runVulnerableStatementLogin(DataSource ds, String email, String password) {
+        String unsafeSql = "SELECT id, email, full_name FROM users WHERE email = '" + email + "' AND password_hash = '" + password + "'";
+        System.out.println("  Constructed Raw SQL: " + unsafeSql);
+
+        try (Connection conn = ds.getConnection();
+             Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery(unsafeSql)) {
+
+            if (rs.next()) {
+                System.out.println("  [VULNERABILITY EXPLOITED] Attacker logged in as: " 
+                        + rs.getString("full_name") + " (" + rs.getString("email") + ")");
+            } else {
+                System.out.println("  Login failed.");
+            }
+
+        } catch (SQLException e) {
+            log.error("Statement execution error", e);
+        }
+    }
+
+    /**
+     * SECURE IMPLEMENTATION (PROFESSIONAL PATTERN)
+     * <p>
+     * WHY THIS WORKS:
+     * 1. The SQL template is pre-sent to the database engine first with placeholders '?'.
+     * 2. The DB engine parses the SQL syntax tree (AST) ONCE.
+     * 3. When setString(1, email) is called, the database treats the entire input string
+     *    strictly as a LITERAL DATA VALUE, never as executable SQL code.
+     * 4. Quotes, semicolons, and OR conditions are harmlessly escaped.
+     * 5. BONUS: PreparedStatement allows the DB engine to cache query execution plans,
+     *    significantly speeding up recurring queries!
+     */
+    private static void runSecurePreparedStatementLogin(DataSource ds, String email, String password) {
+        String parameterizedSql = "SELECT id, email, full_name FROM users WHERE email = ? AND password_hash = ?";
+        System.out.println("  Parameterized SQL Template: " + parameterizedSql);
+
+        try (Connection conn = ds.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(parameterizedSql)) {
+
+            // Bind variables by 1-based index
+            pstmt.setString(1, email);
+            pstmt.setString(2, password);
+
+            try (ResultSet rs = pstmt.executeQuery()) {
+                if (rs.next()) {
+                    System.out.println("  Login succeeded for: " + rs.getString("full_name"));
+                } else {
+                    System.out.println("  [SECURE] Authentication properly failed! Input was treated strictly as a string literal.");
+                }
+            }
+
+        } catch (SQLException e) {
+            log.error("PreparedStatement execution error", e);
+        }
+    }
+
+    private static void setupDemoTable(DataSource ds) {
+        try (Connection conn = ds.getConnection();
+             Statement stmt = conn.createStatement()) {
+            stmt.execute("CREATE TABLE IF NOT EXISTS users (" +
+                    "id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, " +
+                    "email VARCHAR(255) NOT NULL, " +
+                    "password_hash VARCHAR(255) NOT NULL, " +
+                    "full_name VARCHAR(150) NOT NULL)");
+            stmt.execute("DELETE FROM users");
+            stmt.execute("INSERT INTO users (email, password_hash, full_name) " +
+                    "VALUES ('admin@orderflow.internal', 'real_secure_hash_123', 'System Administrator')");
+        } catch (SQLException e) {
+            log.error("Failed to initialize test table", e);
+        }
+    }
+}
